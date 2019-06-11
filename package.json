@@ -4,7 +4,11 @@
   "description": "Tencent Cloud Base Blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check": "./node_modules/.bin/prettier --check ./**/*.md",
+    "lint": "./node_modules/.bin/prettier --write ./**/*.md",
+    "dev": "./node_modules/.bin/vuepress dev .",
+    "build": "./node_modules/.bin/vuepress build .",
+    "test": "echo 'empty now'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/TencentCloudBase/blog/issues"
   },
-  "homepage": "https://github.com/TencentCloudBase/blog#readme"
+  "homepage": "https://github.com/TencentCloudBase/blog#readme",
+  "dependencies": {
+    "prettier": "^1.17.1"
+  },
+  "devDependencies": {
+    "gitalk": "^1.5.0",
+    "husky": "^2.3.0",
+    "vuepress": "^1.0.0-beta.2"
+  }
 }
