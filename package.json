@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/TencentCloudBase/blog#readme",
   "dependencies": {
+    "blueimp-md5": "^2.10.0",
     "prettier": "^1.17.1",
     "vuepress-plugin-comment": "^0.5.1"
   },
