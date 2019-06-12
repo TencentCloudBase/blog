@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: "./edit-tools.png"
+heroImage: "https://avatars0.githubusercontent.com/u/40630849?s=200&v=4"
 actionText: 进入导航
 actionLink: "/guide/"
 features:

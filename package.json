@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/TencentCloudBase/blog#readme",
   "dependencies": {
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "vuepress-plugin-comment": "^0.5.1"
   },
   "devDependencies": {
     "gitalk": "^1.5.0",
