@@ -14,8 +14,8 @@ module.exports = {
       {
         choosen: 'gitalk', 
         options: {
-          clientID: '500fe78f5be2549053a1',
-          clientSecret: '1ec36557e7e1f0e9fa81543cae888e76c169d7e4',
+          clientID: '9dd8ddadbf5fdee6627b',
+          clientSecret: 'f8fd092a45dcaa21ff2271e3b04ebabf1545e601',
           repo: 'blog',
           owner: 'TencentCloudBase',
           admin: ['dongyuanxin'],
