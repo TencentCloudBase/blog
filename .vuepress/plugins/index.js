@@ -7,7 +7,7 @@ module.exports = [
       options: {
         id: '<%- window.md5(window.location.pathname) %>',
         clientID: '9dd8ddadbf5fdee6627b',
-        clientSecret: 'f8fd092a45dcaa21ff2271e3b04ebabf1545e601',
+        clientSecret: process.env.TCB_BLOG_clientSecret,
         repo: 'blog',
         owner: 'TencentCloudBase',
         admin: ['dongyuanxin'],
