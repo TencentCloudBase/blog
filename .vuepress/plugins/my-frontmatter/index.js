@@ -14,6 +14,5 @@ module.exports = {
       const extname = path.extname(filepath)
       frontmatter.commentTitle = filepath.substring(0, filepath.lastIndexOf(extname))
     }
-    
   }
 }

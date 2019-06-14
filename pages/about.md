@@ -1,5 +1,5 @@
 ---
-title: "关于"
+title: "团队介绍"
 permalink: "about"
 ---
 
