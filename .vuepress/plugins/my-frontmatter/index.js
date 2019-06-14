@@ -7,6 +7,8 @@ module.exports = {
       path: _path
     } = $page
 
+    frontmatter.comment = frontmatter.comment || false
+
     if (typeof frontmatter.title === 'string') {
       frontmatter.commentTitle = frontmatter.title
     } else {

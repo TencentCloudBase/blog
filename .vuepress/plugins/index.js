@@ -7,7 +7,7 @@ module.exports = [
       choosen: 'gitalk', 
       options: {
         id: '<%- window.md5(frontmatter.to.path || window.location.pathname) %>',
-        title: '<%- frontmatter.commentTitle %>',
+        title: '「评论」<%- frontmatter.commentTitle %>',
         clientID: '9dd8ddadbf5fdee6627b',
         clientSecret: process.env.TCB_BLOG_clientSecret || '',
         repo: 'blog',

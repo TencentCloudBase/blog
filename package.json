@@ -23,7 +23,7 @@
   "dependencies": {
     "blueimp-md5": "^2.10.0",
     "prettier": "^1.17.1",
-    "vuepress-plugin-comment": "^0.5.2"
+    "vuepress-plugin-comment": "^0.5.4"
   },
   "devDependencies": {
     "gitalk": "^1.5.0",
