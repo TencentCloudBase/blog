@@ -1,6 +1,7 @@
 ---
 title: "导航"
 permalink: "guide"
+comment: true
 ---
 
 这里长期更新文案（煽动性），并且主动像近期团队新产品引流。
