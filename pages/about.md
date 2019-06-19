@@ -1,6 +1,7 @@
 ---
-title: "关于"
+title: "团队介绍"
 permalink: "about"
+comment: true
 ---
 
 1. 放置团队介绍
