@@ -11,7 +11,18 @@ module.exports = {
     { text: '导航页', link: '/guide/' },
     { 
       text: '产品介绍', 
-      link: '/产品介绍/产品概述.html',
+      items: [
+        { text: '产品概述', link: '/产品介绍/产品概述.html' },
+        { text: '应用场景', link: '/产品介绍/应用场景.html' },
+        { text: '相关产品', link: '/产品介绍/相关产品.html' },
+        {
+          text: '云开发',
+          items: [
+            { text: '小程序', link: '/产品介绍/基本概念/小程序端基本概念.html' },
+            { text: 'Web', link: '/产品介绍/基本概念/Web 端基本概念.html' }
+          ]
+        }
+      ]
     },
     { 
       text: '开发指南', 
@@ -36,6 +47,7 @@ module.exports = {
       text: '了解更多',
       items: [
         { text: '团队介绍', link: '/about/' },
+        { text: '参与协作', link: '/together/' },
         { text: '更新日志', link: '/log/' },
       ]
     }
