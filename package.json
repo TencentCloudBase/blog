@@ -4,6 +4,7 @@
   "description": "Tencent Cloud Base Blog",
   "main": "index.js",
   "scripts": {
+    "start": "npm run dev",
     "check": "./node_modules/.bin/prettier --check ./**/*.md",
     "lint": "./node_modules/.bin/prettier --write ./**/*.md",
     "dev": "./node_modules/.bin/vuepress dev .",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/TencentCloudBase/blog#readme",
   "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "blueimp-md5": "^2.10.0",
     "prettier": "^1.17.1",
