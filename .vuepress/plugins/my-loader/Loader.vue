@@ -48,7 +48,7 @@ export default {
 .my-loader-circle {
   z-index: 900;
   border: 3px solid#f6ffed;
-  border-top-color: #3eaf7c;
+  border-top: 3px solid #3eaf7c;
   border-radius: 50%;
   transform: rotate(0deg);
   width: 3.5em;
