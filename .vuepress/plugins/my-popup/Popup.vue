@@ -1,6 +1,6 @@
 <template>
-  <div class="my-popup center" v-show="shown">
-    <div class="my-popup-container">
+  <div class="my-popup" v-show="shown" @click="closePopup">
+    <div class="my-popup-container" @click.stop="() => {}">
       <div class="my-popup-exit" @click="closePopup"></div>
       <img :src="imgSrc" alt="" @click="dumpInNewTab">
     </div>
@@ -17,35 +17,35 @@ export default {
   },
 
   mounted () {
+    const imgs = []
+
     const handleClick = (ev) => {
       this.imgSrc = ev.target.getAttribute('src')
       this.shown = true
     }
 
-    const imgListner = () => {
-      const imgs = []
-      
-      setInterval(() => {
-        const newImgs = Array.prototype.slice.call(document.querySelectorAll('img')).filter(img => !findClsInParent(img, 'my-popup'))
+    const bindClick = () => {
+      const newImgs = Array.prototype.slice.call(document.querySelectorAll('img')).filter(img => !findClsInParent(img, 'my-popup'))
 
-        const hasNew = 
-          newImgs.length !== imgs.length ||
-          newImgs.some((img, index) => img !== imgs[index])
+      const hasNew = 
+        newImgs.length !== imgs.length ||
+        newImgs.some((img, index) => img !== imgs[index])
 
-        if (!hasNew) {
-          return
-        }
-        imgs.length = 0
-        imgs.forEach(img => img.onclick = null)
-        newImgs.forEach(img => imgs.push(img))
-        imgs.forEach(img => {
-          img.style.cursor = 'pointer'
-          img.onclick = handleClick
-        })
-      }, 500)
+      if (!hasNew) {
+        return
+      }
+
+      imgs.length = 0
+      imgs.forEach(img => img.onclick = null)
+      newImgs.forEach(img => imgs.push(img))
+      imgs.forEach(img => {
+        img.style.cursor = 'pointer'
+        img.onclick = handleClick
+      })
     }
-
-    imgListner()
+    
+    bindClick()
+    setInterval(bindClick, 500)
   },
 
   methods: {
@@ -61,6 +61,9 @@ export default {
   }
 }
 
+/**
+ * Check if the class of parent dom matches 'cls'
+ */
 function findClsInParent (dom, cls) {
   if (!dom) {
     return false
@@ -84,15 +87,12 @@ function findClsInParent (dom, cls) {
 </script>
 
 <style scoped>
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .my-popup {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 0;
   top: 0;
   width: 100vw;
@@ -126,25 +126,21 @@ function findClsInParent (dom, cls) {
   transition: transform .3s ease-in-out;
 }
 
-.my-popup-exit::before {
+.my-popup-exit::before, .my-popup-exit::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
   width: 20px;
   height: 3px;
+  top: 50%;
+  left: 50%;
   background: white;
+}
+
+.my-popup-exit::before {
   transform: translate(-50%, -50%) rotate(45deg); 
 }
 
 .my-popup-exit::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 3px;
-  background: white;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
