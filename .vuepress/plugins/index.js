@@ -1,6 +1,7 @@
 module.exports = [
   require('./my-frontmatter/index.js'),
   require('./my-md5/index.js'),
+  require('./my-loader/index.js'),
   ['@vuepress/google-analytics', {ga: 'UA-124601890-2'}],
   '@vuepress/back-to-top',
   [
