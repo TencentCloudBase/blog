@@ -15,14 +15,13 @@ export default {
     this.$router.beforeEach((to, from, next) => {
       if (to.path !== from.path) {
         this.show = true
-        setTimeout(next, 300)
+        next()
       } else {
         next()
       }
     })
     this.$router.afterEach((to, from) => {
       this.show = false
-      
     })
   }
 }
