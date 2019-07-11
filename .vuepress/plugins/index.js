@@ -2,7 +2,7 @@ module.exports = [
   require('./my-frontmatter/index.js'),
   require('./my-md5/index.js'),
   require('./my-loader/index.js'),
-  require('./my-popup/index.js'),
+  'vuepress-plugin-viewer',
   ['@vuepress/google-analytics', {ga: 'UA-124601890-2'}],
   '@vuepress/back-to-top',
   [
