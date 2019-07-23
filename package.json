@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "check": "./node_modules/.bin/prettier --check ./**/*.md",
-    "lint": "./node_modules/.bin/prettier --write ./**/*.md",
+    "check": "./node_modules/.bin/prettier --check ./*/**/*.md",
+    "lint": "./node_modules/.bin/prettier --write ./*/**/*.md",
     "dev": "./node_modules/.bin/vuepress dev .",
     "build": "./node_modules/.bin/vuepress build .",
     "test": "echo 'empty now'"
