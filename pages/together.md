@@ -2,6 +2,7 @@
 title: "参与协作"
 permalink: "together"
 comment: true
+sidebar: 'auto'
 ---
 
 当遇到下面所列情况中其中之一时，请阅读本文相关部分：
