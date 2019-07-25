@@ -5,7 +5,7 @@ const 开发指南 = [
     children: [
       {
         title: '小程序端快速入门',
-        collapsable: true,
+        collapsable: false,
         children: [
           ['多端快速入门/小程序端快速入门/入门概述','入门概述'],
           ['多端快速入门/小程序端快速入门/控制台简介','控制台简介'],
@@ -16,7 +16,7 @@ const 开发指南 = [
       },
       {
         title: 'Web端快速入门',
-        collapsable: true,
+        collapsable: false,
         children: [
           ['多端快速入门/Web端快速入门/入门概述','入门概述'],
           ['多端快速入门/Web端快速入门/控制台简介','控制台简介'],
@@ -33,11 +33,11 @@ const 开发指南 = [
     children: [
       {
         title: '数据库',
-        collapsable: true,
+        collapsable: false,
         children: [
           {
             title: '小程序端',
-            collapsable: true,
+            collapsable: false,
             children: [
               ['能力详解/数据库/小程序端/概述','概述'],
               ['能力详解/数据库/小程序端/数据类型','数据类型'],
@@ -55,7 +55,7 @@ const 开发指南 = [
           },
           {
             title: 'Web端',
-            collapsable: true,
+            collapsable: false,
             children: [
               ['能力详解/数据库/Web端/概述','概述'],
               ['能力详解/数据库/Web端/数据类型','数据类型'],
@@ -75,11 +75,11 @@ const 开发指南 = [
       },
       {
         title: '云存储',
-        collapsable: true,
+        collapsable: false,
         children: [
           {
             title: '小程序端',
-            collapsable: true,
+            collapsable: false,
             children: [
               ['能力详解/云存储/小程序端/概述','概述'],
               ['能力详解/云存储/小程序端/管理文件','管理文件'],
@@ -92,7 +92,7 @@ const 开发指南 = [
           },
           {
             title: 'Web端',
-            collapsable: true,
+            collapsable: false,
             children: [
               ['能力详解/云存储/Web端/概述','概述'],
               ['能力详解/云存储/Web端/管理文件','管理文件'],
@@ -106,11 +106,11 @@ const 开发指南 = [
       },
       {
         title: '云函数',
-        collapsable: true,
+        collapsable: false,
         children: [
           {
             title: '小程序端',
-            collapsable: true,
+            collapsable: false,
             children: [
               ['能力详解/云函数/小程序端/概述','概述'],
               ['能力详解/云函数/小程序端/运行机制','运行机制'],
@@ -127,7 +127,7 @@ const 开发指南 = [
           },
           {
             title: 'Web端',
-            collapsable: true,
+            collapsable: false,
             children: [
               ['能力详解/云函数/Web端/概述','概述'],
               ['能力详解/云函数/Web端/运行机制','运行机制'],
@@ -145,11 +145,11 @@ const 开发指南 = [
       },
       {
         title: '云调用',
-        collapsable: true,
+        collapsable: false,
         children: [
           {
             title: '小程序端',
-            collapsable: true,
+            collapsable: false,
             children: [
 
             ]
