@@ -44,7 +44,7 @@ module.exports = {
            { text: '数据库', link: '/开发指南/能力详解/数据库/小程序端/概述.html'},
            { text: '云存储', link: '/开发指南/能力详解/云存储/小程序端/概述.html'},
            { text: '云函数', link: '/开发指南/能力详解/云函数/小程序端/概述.html'},
-           { text: '云调用', link: '/开发指南/能力详解/云调用/小程序端/概述.html'}
+           { text: '云调用', link: 'https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/openapi/openapi.html'}
           ]
         }
       ]
