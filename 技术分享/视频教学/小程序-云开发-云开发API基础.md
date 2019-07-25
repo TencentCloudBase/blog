@@ -4,7 +4,7 @@
 ## 课程介绍
 本次课程中将以小程序·云开发为基础，详细介绍云开发的API概念，帮助开发者理清思路，快速上手云开发。
 
-##课程链接
+## 课程链接
 
 1.1 云开发API概念：
 https://cloud.tencent.com/developer/edu/quick-play/1370-5178
