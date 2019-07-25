@@ -1,0 +1,16 @@
+## 课程名称
+小程序 · 云开发 — 操作基础
+
+## 课程介绍
+本次课程中将以小程序·云开发为基础，详细介绍小程序云开发的数据库，存储管理，云函数架构等功能，并通过简单易懂的案例，帮助开发者快速上手小程序云开发。
+
+## 课程链接
+
+1.1 数据库开发基础：
+https://cloud.tencent.com/developer/edu/quick-play/1365-5172
+
+1.2 储存管理基础：
+https://cloud.tencent.com/developer/edu/quick-play/1365-5173
+
+1.3 云函数架构基础：
+https://cloud.tencent.com/developer/edu/quick-play/1365-5174
