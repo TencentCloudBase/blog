@@ -119,7 +119,6 @@ export default {
 
 .page-guide-row span {
   color: #aaa;
-  backgroud: white;
   padding-left: 20px;
 }
 
