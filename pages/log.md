@@ -2,7 +2,7 @@
 title: "更新日志"
 permalink: "log"
 comment: true
-sidebar: 'auto'
+sidebar: "auto"
 ---
 
 ## 2019/07/08 ~ 2019/07/10
