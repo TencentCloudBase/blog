@@ -13,9 +13,9 @@
         </p>
       </div>
     </div>
-    <section class="home-page-wrapper">
+    <section class="home-page-wrapper" style="padding: 60px;">
       <div class="home-page-columns">
-        <div class="home-page-column" v-for="(item, index) in abilities" :key="index" style="width: 30%;">
+        <div class="home-page-column" v-for="(item, index) in abilities" :key="index" style="width: 18%;">
           <h4>{{item.name}}</h4>
           <p>{{item.des}}</p>
         </div>
@@ -26,19 +26,25 @@
         全面的开发平台与支持
       </h3>
       <div class="home-page-columns">
-        <div class="home-page-column" v-for="item in num2" :key="item" style="width: 30%;">
-          <div class="home-page-column-card">
-            <h4>Cloud Firestore</h4>
-            <p>在全球范围内存储和同步应用数据</p>
+        <div 
+          class="home-page-column" 
+          v-for="(platform, index) in platforms" 
+          :key="`${platform.title}-${index}`" 
+        >
+          <div class="home-page-column-head">
+            {{platform.title}}
           </div>
-          <div class="home-page-column-card">
-            <h4>Cloud Firestore</h4>
-            <p>在全球范围内存储和同步应用数据</p>
+          <div 
+            class="home-page-column-card"
+            v-for="(row, _index) in platform.rows"
+            :key="_index"
+          >
+            <p><a :href="row.href">{{row.name}}</a></p>
           </div>
         </div>
       </div>
     </section>
-    <section class="home-page-wrapper">
+    <!-- <section class="home-page-wrapper">
       <h3 class="home-page-title">
         案例
       </h3>
@@ -50,7 +56,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer>
       Copyright © 2019 Tencent Cloud Base
     </footer>
@@ -67,19 +73,92 @@ export default {
     return {
       abilities: [
         {
-          name: '云存储',
-          des: 'Firebase gives you functionality like analytics, databases, messaging and crash reporting so you can move quickly and focus on your users'
-        },
-        {
           name: '云函数',
-          des: 'Firebase gives you functionality like analytics, databases, messaging and crash reporting so you can move quickly and focus on your users'
+          des: '在云端运行的代码，微信私有天然鉴权，只需编写自身业务逻辑代码'
         },
         {
-          name: '云数据库',
-          des: 'Firebase gives you functionality like analytics, databases, messaging and crash reporting so you can move quickly and focus on your users'
+          name: '数据库',
+          des: '一个既可在小程序前端操作，也能在云函数中读写的 JSON 数据库'
         },
+        {
+          name: '存储',
+          des: '天然 CDN 加速，在小程序前端直接上传/下载云端文件，可视化管理'
+        },
+        {
+          name: 'AI智能图像',
+          des: '集成智能鉴黄、人脸识别、人脸识别、人脸核身等AI视觉能力'
+        },
+        {
+          name: '智能客服',
+          des: '支持语音和文字识别，轻松构建无服务器应用'
+        }
       ],
-      num2: [5, 6, 7],
+      platforms: [
+        {
+          title: '支持多端',
+          rows: [
+            {
+              name: '小程序',
+              href: ''
+            },
+            {
+              name: 'Web',
+              href: ''
+            },
+            {
+              name: 'Android',
+              href: ''
+            },
+          ]
+        },
+        {
+          title: '基础能力',
+          rows: [
+            {
+              name: '云函数',
+              href: ''
+            },
+            {
+              name: '数据库',
+              href: ''
+            },
+            {
+              name: '存储',
+              href: ''
+            },
+            {
+              name: '云调用',
+              href: ''
+            },
+          ]
+        },
+        {
+          title: '增值能力',
+          rows: [
+            {
+              name: 'AI智能图像',
+              href: ''
+            },
+            {
+              name: '智能客服',
+              href: ''
+            }
+          ]
+        },
+        {
+          title: 'SDK',
+          rows: [
+            {
+              name: 'NodeJS',
+              href: ''
+            },
+            {
+              name: 'PHP',
+              href: ''
+            }
+          ]
+        }
+      ],
       num3: [1, 2, 3, 4, 5, 6]
     }
   }
@@ -152,30 +231,29 @@ export default {
 
   &-column {
     > h4 {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     > p {
       color: #8c8c8c;
+      font-size: 15px;
     }
 
     &-card {
       margin-bottom: 30px;
-      transition: all .2s ease-out;
-
-      &:hover {
-        transform: translateY(-5px);
-        cursor: pointer;
-      }
-
-      h4 {
-        margin: 0;
-      }
 
       p {
-        color: #8c8c8c;
-        font-size: 14px;
+        font-size: 16px;
+        a {
+          color: #595959;
+        }
       }
+    }
+
+    &-head {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #2c3e50;
     }
 
     &-logo {

@@ -8,63 +8,74 @@ module.exports = {
   lastUpdated: '更新于',
   sidebar,
   nav: [
-    { text: '导航页', link: '/guide/' },
     { 
-      text: '产品介绍', 
+      text: '指南', 
       items: [
-        { text: '产品概述', link: '/产品介绍/产品概述.html' },
-        { text: '应用场景', link: '/产品介绍/应用场景.html' },
-        { text: '相关产品', link: '/产品介绍/相关产品.html' },
         {
-          text: '云开发',
+          text: '快速入门',
           items: [
-            { text: '小程序', link: '/产品介绍/基本概念/小程序端基本概念.html' },
-            { text: 'Web', link: '/产品介绍/基本概念/Web 端基本概念.html' }
-          ]
-        }
-      ]
-    },
-    { 
-      text: '开发指南', 
-      items: [
-        // { text: '控制台简介', link: '/开发指南/控制台简介/小程序云开发控制台.html' },
-        // { text: '云数据库', link: '/开发指南/数据库/概述.html' },
-        // { text: '云存储', link: '/开发指南/存储管理/概述.html' },
-        // { text: '云函数', link: '/开发指南/云函数/概述.html' },
-        {
-          text: '多端快速入门',
-          items: [
-            { text: '小程序快速入门', link: '/开发指南/多端快速入门/小程序端快速入门/入门概述.html'},
-            { text: 'Web端快速入门', link: '/开发指南/多端快速入门/Web端快速入门/入门概述.html'}
+            { text: '小程序端', link: '/开发指南/多端快速入门/小程序端快速入门/入门概述.html' },
+            { text: 'Web端', link: '/开发指南/多端快速入门/Web端快速入门/入门概述.html' },
           ]
         },
         {
-          text: '能力详解',
+          text: '数据库',
           items: [
-           { text: '数据库', link: '/开发指南/能力详解/数据库/小程序端/概述.html'},
-           { text: '云存储', link: '/开发指南/能力详解/云存储/小程序端/概述.html'},
-           { text: '云函数', link: '/开发指南/能力详解/云函数/小程序端/概述.html'},
-           { text: '云调用', link: 'https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/openapi/openapi.html'}
+            { text: '控制台介绍', link: '/404.html' }, 
+            { text: '小程序端', link: '/开发指南/能力详解/数据库/小程序端/概述.html' },
+            { text: 'Web端', link: '/开发指南/能力详解/数据库/Web端/概述.html' },
+          ]
+        },
+        {
+          text: '云函数',
+          items: [
+            { text: '控制台介绍', link: '/404.html' }, 
+            { text: '小程序端', link: '/开发指南/能力详解/云函数/小程序端/概述.html' },
+            { text: 'Web端', link: '/开发指南/能力详解/云函数/Web端/概述.html' },
+          ]
+        },
+        {
+          text: '存储',
+          items: [
+            { text: '控制台介绍', link: '/404.html' }, 
+            { text: '小程序端', link: '/开发指南/能力详解/数据库/小程序端/概述.html' },
+            { text: 'Web端', link: '/开发指南/能力详解/数据库/Web端/概述.html' },
+          ]
+        },
+        {
+          text: '云调用',
+          items: [
+            { text: '小程序端', link: '/404.html'}
           ]
         }
       ]
     },
-    { 
-      text: '技术分享', 
-      link: '/技术分享/',
+    {
+      text: 'SDK',
       items: [
-        { text: '官方教程', link: '/技术分享/官方教程/树洞小程序.html' },
-        { text: '实战分享', link: '/技术分享/实战分享/Taro商城实战.html' },
+        { text: 'PHP', link: '/404.html' },
+        { text: 'Node', link: '/SDK%20文档/服务端%20SDK/概览.html' },
+        { text: '小程序', link: '/SDK%20文档/客户端%20SDK/小程序端%20SDK.html' },
+        { text: 'Java', link: '/404.html' },
+        { text: 'Python', link: '/404.html' },
+        { text: 'JS', link: '/SDK%20文档/客户端%20SDK/Web%20端%20SDK/概述.html' },
+        { text: 'Android', link: '/404.html' },
+      ]
+    },
+    {
+      text: '技术分享',
+      items: [
+        { text: 'Demos', link: '/技术分享/官方教程/树洞小程序.html' },
+        { text: '视频视频', link: '/技术分享/视频教学/基础教程/1.小程序-云开发-概念基础.html' },
+        { text: '最佳实践', link: '/技术分享/实战分享/Taro商城实战.html' },
         { text: '客户案例', link: '/技术分享/客户案例/猫眼.html' },
-        { text: '视频教学', link: '/技术分享/视频教学/基础教程/1.小程序-云开发-概念基础.html' },
-        { text: '洞察', link: '/技术分享/洞察/从前端到全栈.html' },
+        { text: '每周分享', link: '/404.html' },
       ]
     },
     {
       text: '了解更多',
       items: [
-        { text: '团队介绍', link: '/about/' },
-        { text: '参与协作', link: '/together/' },
+        { text: '云开发主页', link: 'https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-http-api/' },
         { text: '更新日志', link: '/log/' },
       ]
     }
