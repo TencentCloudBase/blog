@@ -44,21 +44,26 @@
         </div>
       </div>
     </section>
-    <!-- <section class="home-page-wrapper">
+    <section class="home-page-wrapper">
       <h3 class="home-page-title">
-        案例
+        更多内容
       </h3>
       <div class="home-page-columns">
-        <div class="home-page-column" v-for="item in num3" :key="item" style="width: 30%;">
-          <div class="home-page-column-logo">
-            <img src="https://firebase.google.com/images/integrations/google-ads.svg?hl=zh-cn" alt="图片">
-            <h5>Google Ads</h5>
-          </div>
+        <div class="home-page-column">
+          <img src="/qrcode.png" alt="腾讯云·云开发公众号">
+        </div>
+        <div class="home-page-others">
+          <p
+            v-for="(item, index) in others" 
+            :key="index"
+          >
+            <a :href="item.href">{{item.name}}</a>
+          </p>
         </div>
       </div>
-    </section> -->
+    </section>
     <footer>
-      Copyright © 2019 Tencent Cloud Base
+      Copyright © 2019 <a href="https://cloud.tencent.com/developer/team/tcb" target="_blank">Tencent Cloud Base</a>. All Rights Reserved.
     </footer>
   </div>
 </template>
@@ -163,7 +168,20 @@ export default {
           ]
         }
       ],
-      num3: [1, 2, 3, 4, 5, 6]
+      others: [
+        {
+          name: '快速访问小程序·云开发解决方案',
+          href: 'https://cloud.tencent.com/solution/la'
+        },
+        {
+          name: '快速访问云开发Web服务',
+          href: 'https://cloud.tencent.com/product/tcb'
+        },
+        {
+          name: '技术交流',
+          href: 'https://developers.weixin.qq.com/community/develop/mixflow'
+        }
+      ]
     }
   }
 }
@@ -231,6 +249,17 @@ export default {
     box-sizing: border-box;
     width: 100%;
     overflow: auto;
+  }
+
+  &-others {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    a {
+      color: #2c3e50;
+      font-size: 18px;
+    }
   }
 
   &-column {
