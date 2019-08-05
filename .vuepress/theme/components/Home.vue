@@ -253,6 +253,7 @@ $mobile-width: 1023px;
 
     @media (max-width: $mobile-width) {
       margin-bottom: 50px;
+      font-size: 25px;
     }
   }
 
@@ -277,6 +278,10 @@ $mobile-width: 1023px;
     a {
       color: #2c3e50;
       font-size: 18px;
+
+      @media (max-width: $mobile-width) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -295,6 +300,11 @@ $mobile-width: 1023px;
 
       p {
         font-size: 16px;
+
+        @media (max-width: $mobile-width) {
+          font-size: 14px;
+        }
+
         a {
           color: #595959;
         }
@@ -302,7 +312,7 @@ $mobile-width: 1023px;
     }
 
     &-head {
-      font-size: 20px;
+      font-size: 22px;
       margin-bottom: 30px;
       line-height: 30px;
       height: 30px;
