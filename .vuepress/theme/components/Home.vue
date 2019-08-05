@@ -188,6 +188,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$mobile-width: 1023px;
+
 .home-page {
   padding-top: 3.6rem;
   max-width: 1350px;
@@ -202,6 +204,10 @@ export default {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+
+      @media (max-width: $mobile-width) {
+        width: 100vw;
+      }
     }
 
     &-title {
@@ -234,12 +240,20 @@ export default {
   &-wrapper {
     padding: 60px 100px;
     border-top: 1px solid #eaecef;
+
+    @media (max-width: $mobile-width) {
+      padding: 20px 30px;
+    }
   }
 
   &-title {
     text-align: center;
     margin-bottom: 90px;
     font-size: 27px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 50px;
+    }
   }
 
   &-columns {
@@ -249,6 +263,10 @@ export default {
     box-sizing: border-box;
     width: 100%;
     overflow: auto;
+
+    @media (max-width: $mobile-width) {
+      flex-wrap: wrap;
+    }
   }
 
   &-others {
@@ -286,7 +304,13 @@ export default {
     &-head {
       font-size: 20px;
       margin-bottom: 30px;
+      line-height: 30px;
+      height: 30px;
       color: #2c3e50;
+
+      @media (max-width: $mobile-width) {
+        font-size: 18px;
+      }
     }
 
     &-logo {
