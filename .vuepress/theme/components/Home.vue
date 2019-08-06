@@ -135,7 +135,7 @@ export default {
           rows: [
             {
               name: 'AI智能图像',
-              href: '/404.html'
+              href: '/增值能力/AI人脸特征分析与检测/AI人脸特征检测与分析介绍.html'
             },
             {
               name: '智能客服',

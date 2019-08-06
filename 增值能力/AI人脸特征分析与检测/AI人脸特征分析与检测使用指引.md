@@ -1,0 +1,135 @@
+# AI 人脸检测与分析使用指引文档
+
+## 登录
+
+在使用服务之前，需要先登录到[腾讯云-云开发控制台][1]，小程序开发者在使用扩展能力之前请确保已经开通[小程序云开发][2]环境,并选择小程序开发者登录方式。
+
+- 小程序云开发登录方式
+
+  访问[腾讯云登录页面](https://cloud.tencent.com/login)，选择`微信公众号`方式，前往`微信公众号授权`。使用小程序管理员微信扫码授权即可登录腾讯云，进而访问[腾讯云-云开发控制台][1]。
+  ![mp login tencentcloud](https://main.qcloudimg.com/raw/4ca24955bff0484e9c782da6c0f6fd6e.png)
+
+- web 云开发登录方式
+
+  使用您的腾讯云帐号直接登录腾讯云后即可访问[腾讯云-云开发控制台][1]。
+
+## 开通
+
+1. 登录[腾讯云-云开发控制台][1], 选择扩展能力解决方案标签
+1. 在*待开通*选项中选择 `AI 人脸特征检测与分析`项，点击立即开通。等待开通完成。
+1. 开通完成后即可在*已开通*选项中找到开通的增值服务。
+
+## 授权
+
+为了更好的体验，需要授权云开发访问您的扩展能力权限。在已开通的 `AI 人脸特征检测与分析`选项卡中点击`授权以部署`按钮，即可开启授权流程。授权后即可享受免鉴权调用当前扩展功能的服务与能力。
+
+## 部署
+
+使用一键部署能力，即可立刻部署扩展能力云函数服务到所选择的环境下，部署完成后即可直接使用云函数调用服务，详细了解 一键部署 能力。
+
+- 一键部署
+  点击 `AI 人脸特征检测与分析`选项卡中`立即部署`按钮，可选择将系统内置的 Node.js 云函数 `tcbService-ai-detectFace` 部署到你的云开发环境中，若当前环境已存在同名函数，系统会在获得您的同意后使用当前系统内置的最新版本覆盖该函数。部署完成后，你可以在开发过程中调用该云函数获得 `AI 人脸特征检测与分析`的能力。
+
+- 手动部署
+  如果因为各种原因，你无法在[腾讯云-云开发控制台][1]中部署 `tcbService-ai-detectFace` 云函数，你也可以选择手动部署。
+
+1. 访问[该地址](https://tcb-value-added-1256746729.cos.ap-shanghai.myqcloud.com/tcbService-ai-detectFace.zip)，获取最新的 `tcbService-ai-detectFace` 代码包。
+1. 对于小程序用户，将代码包解压至小程序项目 `/cloud/function` 目录下，在微信开发者工具中选择刚刚解压的目录，右键菜单中选择`上传并部署：所有文件`，将函数部署到云端环境中。
+   ![deploy in weixin IDE](https://main.qcloudimg.com/raw/ad0a69329fcf63c9d747440e659b40da.png)
+1. 对于云开发控制台用户，在[腾讯云-云开发控制台][1]选择要部署的环境，在左侧导航中选择云函数，新建以 `tcbService-ai-detectFace` 为名，运行环境为 `Nodejs 8.9` 的空白云函数。在该函数详情页子 tab 中选择`函数代码`，提交方式选择为`本地上传ZIP包`，将 1 中下载到的代码包作为附件上传。
+   ![deploy in tcb-console](https://main.qcloudimg.com/raw/892b2b57a1130f714781e02c41e44c3c.png)
+
+## 使用
+
+- 在小程序中使用，以下方案选择一种使用方式即可，推荐使用云函数直接调用。
+
+  - 直接调用云函数使用
+    直接在小程序中调用云函数。在小程序中，`wx.cloud` init 完成后可以如下发起云函数调用：
+
+    ```javascript
+    wx.cloud.callFunction({
+      name: "tcbService-ai-detectFace",
+      data: {
+        FileID: ""
+        /* ...
+         * other data
+         **/
+      }
+    });
+    ```
+
+  - 使用扩展方案 SDK 调用
+
+    使用 `tcb-services-sdk` 。在小程序项目中下载 `tcb-services-sdk` 包。
+
+    ```bash
+    npm install tcb-service-sdk
+    ```
+
+    将其中的 `dist/tcb-service-mp-sdk/index.js` 拷贝到小程序项目中，作为外部库，可以将其放置在小程序项目 `/client/libs/tcb-service-mp-sdk/index.js`。在项目中可以通过如下方式调用：
+
+    ```javascript
+    import TcbService from "路径/tcb-service-sdk/index"; // sdk path
+    const tcbService = new TcbService();
+
+    tcbService.callService({
+      service: "ai",
+      action: "tcbService-ai-detectFace",
+      data: {
+        FileID: ""
+        /* ...
+         * other data
+         **/
+      }
+    });
+    ```
+
+    这样就完成了一次人脸检测与分析调用，`callService` 返回为 Promise 对象，可以方便的进行异步操作处理。
+
+- 快速上手
+
+  [2 分钟完成颜值打分小程序](./使用案例/2%20分钟完成颜值打分小程序.md)
+
+## 参数说明
+
+### 请求参数
+
+| 参数名               | 解释                                                                                                                                                                                                                                                                                                                                                               | 类型   | 必选 | 默认值 |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ---- | ------ |
+| MaxFaceNum           | 最多处理的人脸数目。默认值为 1（仅检测图片中面积最大的那张人脸），最大值为 30。 <br />此参数用于控制处理待检测图片中的人脸个数，值越小，处理速度越快。                                                                                                                                                                                                             | Number | 否   | 1      |
+| MinFaceSize          | 人脸长和宽的最小尺寸，单位为像素。默认为 40。低于此尺寸的人脸不会被检测。                                                                                                                                                                                                                                                                                          | Number | 否   | 40     |
+| FileID               | 云开发 uploadFile 得到的 fileID, 支持直接使用云端的图片进行分析                                                                                                                                                                                                                                                                                                    | String | 否   |
+| Url                  | 图片的 Url，存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。<br /> 非腾讯云存储的 Url 速度和稳定性可能受一定影响。支持 PNG、JPG、JPEG、BMP，不支持 GIF 图片。                                                                                                                                                                                 | String | 否   |        |
+| Image                | 图片 base64 数据。支持 PNG、JPG、JPEG、BMP，不支持 GIF 图片。<br />FileID、Url、Image 必须提供一个，生效优先级 FileID > Url > Image                                                                                                                                                                                                                                | String | 否   |
+| NeedFaceAttributes   | 是否需要返回人脸属性信息（FaceAttributesInfo）。0 为不需要返回，1 为需要返回。 非 1 值均视为不需要返回，此时 FaceAttributesInfo 不具备参考意义。 <br /> 最多返回面积最大的 5 张人脸属性信息，超过 5 张人脸（第 6 张及以后的人脸）的 FaceAttributesInfo 不具备参考意义。 <br />提取人脸属性信息较为耗时，如不需要人脸属性信息，建议关闭此项功能，加快人脸检测速度。 | Number | 否   | 1      |
+| NeedQualityDetection | 是否开启质量检测。0 为关闭，1 为开启。 非 1 值均视为不进行质量检测。 建议：人脸入库操作建议开启此功能。                                                                                                                                                                                                                                                            | Number | 否   | 1      |
+
+### 响应参数
+
+| 参数    | 类型           | 说明                                                                   |
+| ------- | -------------- | ---------------------------------------------------------------------- |
+| code    | Number         | 0 表示请求成功，相应内容见 data；非 0 表示请求失败，失败信息见 message |
+| data    | DetectFactData | 人脸检测与分析结果对象                                                 |
+| message | String         | 错误信息                                                               |
+
+### DetectFactData
+
+| 参数        | 类型                                                                           | 说明                                                                    |
+| ----------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| ImageWidth  | Number                                                                         | 请求的图片宽度。                                                        |
+| ImageHeight | DetectFactData                                                                 | 请求的图片高度。                                                        |
+| FaceInfos   | Array of [FaceInfo](https://cloud.tencent.com/document/api/867/32807#FaceInfo) | 人脸信息列表。                                                          |
+| RequestId   | String                                                                         | 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。 |
+
+[1]: https://console.cloud.tencent.com/tcb
+[2]: https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html
+
+### 错误码
+
+| 错误码 | 说明                     |
+| ------ | ------------------------ |
+| 10001  | 外部资源加载失败         |
+| 10002  | 外部资源太大, 超过 3.75M |
+| 10003  | 内部错误                 |
+| 10004  | 用户错误                 |
+| 10005  | 人脸分析逻辑错误         |
