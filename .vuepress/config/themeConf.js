@@ -51,7 +51,7 @@ module.exports = {
     {
       text: 'SDK',
       items: [
-        { text: 'PHP', link: '/404.html' },
+        { text: 'PHP', link: '/SDK%20文档/PHP%20SDK/0.介绍.html' },
         { text: 'Node', link: '/SDK%20文档/服务端%20SDK/概览.html' },
         { text: '小程序', link: '/SDK%20文档/客户端%20SDK/小程序端%20SDK.html' },
         { text: 'Java', link: '/404.html' },

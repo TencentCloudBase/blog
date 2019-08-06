@@ -246,8 +246,24 @@ const 技术分享 = [
   }
 ]
 
+const SDK文档 = [
+  {
+    title: 'PHP',
+    collapsable: false,
+    children: [
+      ['PHP SDK/0.介绍', '0.介绍'],
+      ['PHP SDK/1.初始化', '1.初始化'],
+      ['PHP SDK/2.存储', '2.存储'],
+      ['PHP SDK/3.数据库', '3.数据库'],
+      ['PHP SDK/4.云函数', '4.云函数'],
+      ['PHP SDK/5.如何结合sdk编写云函数', '5.如何结合sdk编写云函数'],
+    ]
+  }
+]
+
 module.exports = {
   '/开发指南/': 开发指南,
   '/产品介绍/': 产品介绍,
   '/技术分享/': 技术分享,
+  '/SDK 文档/': SDK文档
 }
