@@ -21,7 +21,6 @@ module.exports = {
         {
           text: '数据库',
           items: [
-            { text: '控制台介绍', link: '/404.html' }, 
             { text: '小程序端', link: '/开发指南/能力详解/数据库/小程序端/概述.html' },
             { text: 'Web端', link: '/开发指南/能力详解/数据库/Web端/概述.html' },
           ]
@@ -29,7 +28,6 @@ module.exports = {
         {
           text: '云函数',
           items: [
-            { text: '控制台介绍', link: '/404.html' }, 
             { text: '小程序端', link: '/开发指南/能力详解/云函数/小程序端/概述.html' },
             { text: 'Web端', link: '/开发指南/能力详解/云函数/Web端/概述.html' },
           ]
@@ -37,7 +35,6 @@ module.exports = {
         {
           text: '存储',
           items: [
-            { text: '控制台介绍', link: '/404.html' }, 
             { text: '小程序端', link: '/开发指南/能力详解/数据库/小程序端/概述.html' },
             { text: 'Web端', link: '/开发指南/能力详解/数据库/Web端/概述.html' },
           ]
@@ -45,7 +42,7 @@ module.exports = {
         {
           text: '云调用',
           items: [
-            { text: '小程序端', link: '/404.html'}
+            { text: '小程序端', link: 'https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/openapi/openapi.html'}
           ]
         }
       ]
