@@ -3,8 +3,8 @@
     <div class="home-page-hero">
       <div class="home-page-hero-inner">
         <h1 class="home-page-hero-title">
-          CloudBase帮助开发者<br/>
-          快速构建Web和移动应用
+          云开发CloudBase<br/>
+          快速构建小程序、Web和移动应用
         </h1>
         <p class="home-page-hero-btn">
           <a href="/guide/">
@@ -13,18 +13,15 @@
         </p>
       </div>
     </div>
-    <section class="home-page-wrapper" style="padding: 60px;">
+    <!-- <section class="home-page-wrapper" style="padding: 60px;">
       <div class="home-page-columns">
         <div class="home-page-column" v-for="(item, index) in abilities" :key="index" style="width: 18%;">
           <h4>{{item.name}}</h4>
           <p>{{item.des}}</p>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="home-page-wrapper">
-      <h3 class="home-page-title">
-        全面的开发平台与支持
-      </h3>
       <div class="home-page-columns">
         <div 
           class="home-page-column" 
@@ -48,7 +45,7 @@
       <h3 class="home-page-title">
         更多内容
       </h3>
-      <div class="home-page-columns">
+      <div class="home-page-columns" style="padding: 0 30px;">
         <div class="home-page-column">
           <img src="/qrcode.png" alt="腾讯云·云开发公众号">
         </div>
@@ -110,10 +107,6 @@ export default {
               name: 'Web',
               href: '/开发指南/多端快速入门/Web端快速入门/入门概述.html'
             },
-            {
-              name: 'Android',
-              href: '/404.html'
-            },
           ]
         },
         {
@@ -133,7 +126,7 @@ export default {
             },
             {
               name: '云调用',
-              href: '/404.html'
+              href: '/开发指南/能力详解/云调用/小程序端/云调用.html'
             },
           ]
         },
@@ -170,17 +163,21 @@ export default {
       ],
       others: [
         {
-          name: '快速访问小程序·云开发解决方案',
-          href: 'https://cloud.tencent.com/solution/la'
+          name: '云加社区',
+          href: 'https://cloud.tencent.com/developer/team/tcb'
+        },
+        {
+          name: '微信开放社区',
+          href: 'https://developers.weixin.qq.com/community/develop/mixflow'
         },
         {
           name: '快速访问云开发Web服务',
           href: 'https://cloud.tencent.com/product/tcb'
         },
         {
-          name: '技术交流',
-          href: 'https://developers.weixin.qq.com/community/develop/mixflow'
-        }
+          name: '快速访问小程序·云开发解决方案',
+          href: 'https://cloud.tencent.com/solution/la'
+        },
       ]
     }
   }
@@ -196,7 +193,7 @@ $mobile-width: 1023px;
   margin: 0 auto;
 
   &-hero {
-    min-height: 50vh;
+    min-height: calc((100vh - 3.6rem) / 2);
     position: relative;
 
     &-inner {
@@ -206,7 +203,7 @@ $mobile-width: 1023px;
       transform: translate(-50%, -50%);
 
       @media (max-width: $mobile-width) {
-        width: 100vw;
+        width: 90vw;
       }
     }
 
@@ -286,13 +283,8 @@ $mobile-width: 1023px;
   }
 
   &-column {
-    > h4 {
-      font-size: 20px;
-    }
-
-    > p {
-      color: #8c8c8c;
-      font-size: 15px;
+    a {
+      color: #595959;
     }
 
     &-card {
@@ -303,10 +295,6 @@ $mobile-width: 1023px;
 
         @media (max-width: $mobile-width) {
           font-size: 14px;
-        }
-
-        a {
-          color: #595959;
         }
       }
     }
