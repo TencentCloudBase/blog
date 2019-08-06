@@ -42,7 +42,7 @@ module.exports = {
         {
           text: '云调用',
           items: [
-            { text: '小程序端', link: 'https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/openapi/openapi.html'}
+            { text: '小程序端', link: '/开发指南/能力详解/云调用/小程序端/云调用.html'}
           ]
         }
       ]

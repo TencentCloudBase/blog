@@ -151,7 +151,7 @@ const 开发指南 = [
             title: '小程序端',
             collapsable: false,
             children: [
-
+              ['能力详解/云调用/小程序端/云调用','云调用']
             ]
           }
         ]
