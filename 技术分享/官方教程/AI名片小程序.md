@@ -10,7 +10,7 @@
 
 ### 课程教材 PDF 下载
 
-[https://github.com/TencentCloudBase/tcb-demo-namecard](https://github.com/TencentCloudBase/tcb-demo-namecard)
+<https://github.com/TencentCloudBase/tcb-demo-namecard>
 
 ![](https://puui.qpic.cn/vupload/0/20190612_1560307562567_qgo8u0hxbz.png/0)
 ![](https://puui.qpic.cn/vupload/0/20190612_1560307719158_s3uzf3ro93c.png/0)
@@ -19,11 +19,11 @@
 
 ### 课程初始源码
 
-[https://github.com/TencentCloudBase/tcb-demo-namecard/tree/master/init](https://github.com/TencentCloudBase/tcb-demo-namecard/tree/master/init)
+<https://github.com/TencentCloudBase/tcb-demo-namecard/tree/master/init>
 
 ### 课程完整源码
 
-[https://github.com/TencentCloudBase/tcb-demo-namecard/tree/master/intact](https://github.com/TencentCloudBase/tcb-demo-namecard/tree/master/intact)
+<https://github.com/TencentCloudBase/tcb-demo-namecard/tree/master/intact>
 
 ## 联系我们
 
