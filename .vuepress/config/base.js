@@ -9,6 +9,9 @@ module.exports = {
         src: '/scripts/baidu-analytics.js',
         async: ''
       }
+    ],
+    [
+      'link', { rel: 'icon', href: '/favicon.png' }
     ]
   ]
 }
