@@ -1,0 +1,56 @@
+# 函数配置
+
+::: warning ⚠️注意事项
+所有 Cloudbase CLI 命令均在 `.tcbrc.json` 文件所在目录执行。
+:::
+
+## 更新函数配置
+
+创建函数式，Cloudbase CLI 会为函数提供一些默认的配置，所以你不需要添加配置信息也可以直接部署函数。你也可以通过下面的命令修改函数的配置
+
+```shell
+# 更新 app 函数的配置
+tcb functions:config:update app
+
+# 更新配置文件中所有函数的配置信息
+tcb functions:config:update
+```
+
+目前支持修改的函数配置包含超时时间 `timeout`、环境变量 `envVariables`、运行时 `runtime` 以及私有网络 `vpc`。
+
+Cloudbase CLI 会从项目配置文件中读取函数的配置信息并更新，Cloudbase CLI 会更新配置文件中存在的函数的所有配置，不能指定更新单个配置选项。
+
+配置文件参考：
+
+```js
+{
+    // 关联环境 ID
+    "envId": "dev-xxxx",
+    // 函数配置
+    "functions": [
+        {
+            // functions 文件夹下函数文件夹的名称，即函数名
+            "name": "app",
+            // 函数配置
+            "config": {
+                // 超时时间，单位：秒 S
+                "timeout": 5,
+                // 环境变量
+                "envVariables": {
+                    "key": "value"
+                },
+                // 私有网络配置，如果不使用私有网络，可不配置
+                "vpc": {
+                    // vpc id
+                    "vpcId": "vpc-xxx",
+                    // 子网 id
+                    "subnetId": "subnet-xxx"
+                },
+                // 运行时，目前可选运行包含：Nodejs8.9, Php7, Java8
+                // 此参数可以省略，默认为 Nodejs8.9
+                "runtime": "Nodejs8.9"
+            }
+        }
+    ]
+}
+```

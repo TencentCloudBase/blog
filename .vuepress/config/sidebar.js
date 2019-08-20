@@ -329,10 +329,33 @@ const 增值能力 = [
   }
 ]
 
+const cli = [
+    '',
+    'config',
+    {
+        title: '环境',
+        collapsable: false,
+        children: ['env/', 'env/domain', 'env/login']
+    },
+    {
+        title: '云函数',
+        collapsable: false,
+        children: [
+          'function/',
+          'function/config',
+          'function/trigger',
+          'function/code',
+          'function/log'
+        ]
+    },
+    'api/'
+]
+
 module.exports = {
   '/开发指南/': 开发指南,
   '/产品介绍/': 产品介绍,
   '/技术分享/': 技术分享,
   '/SDK 文档/': SDK文档,
   '/增值能力/': 增值能力,
+  '/cli/': cli
 }
