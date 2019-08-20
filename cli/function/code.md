@@ -6,7 +6,7 @@
 
 当您的函数代码发生改变时，您可以使用下面的命令更新您的云函数的代码：
 
-```shell
+```sh
 # 更新 app 函数的代码
 tcb functions:code:update app
 ```

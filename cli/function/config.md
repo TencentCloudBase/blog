@@ -8,7 +8,7 @@
 
 创建函数式，Cloudbase CLI 会为函数提供一些默认的配置，所以你不需要添加配置信息也可以直接部署函数。你也可以通过下面的命令修改函数的配置
 
-```shell
+```sh
 # 更新 app 函数的配置
 tcb functions:config:update app
 

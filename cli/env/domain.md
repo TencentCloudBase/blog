@@ -10,13 +10,13 @@
 
 使用下面的命令查看所有配置的安全域名
 
-```shell
+```sh
 tcb env:domain:list
 ```
 
 您会得到类似下面的输出
 
-```shell
+```sh
 ┌────────────────────────────────────┬────────────────┬─────────────────────┬────────┐
 │              Domain Id             │     Domain     │     CreateTime      │ Status │
 ├────────────────────────────────────┼────────────────┼─────────────────────┼────────┤
@@ -30,13 +30,13 @@ tcb env:domain:list
 
 您可以使用下面的命令添加新的安全域名：
 
-```shell
+```sh
 tcb env:domain:create <domian>
 ```
 
 您需要指定被添加的域名 domain，当需要添加多个域名时，需要以 `/` 分隔，如 `abc.com/def.com`。
 
-```shell
+```sh
 # 添加一个域名
 tcb env:domain:create www.xxx.com
 
@@ -48,7 +48,7 @@ tcb env:domain:create www.domain1.com/www.domain2.com/www.domain3.com
 
 您可以使用下面的命令删除安全域名：
 
-```shell
+```sh
 tcb env:domain:delete
 ```
 

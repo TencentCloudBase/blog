@@ -10,13 +10,13 @@ Cloudbase CLI 是一个开源的命令行界面交互工具，用于帮助用户
 
 ### npm
 
-```shell
+```sh
 npm install -g @cloudbase/cli
 ```
 
 ### yarn
 
-```shell
+```sh
 yarn global add @cloudbase/cli
 ```
 
@@ -38,7 +38,7 @@ yarn global add @cloudbase/cli
 
 在您的终端中输入下面的命令
 
-```shell
+```sh
 tcb login
 ```
 
@@ -50,7 +50,7 @@ Cloudbase CLI 会自动打开 Web 控制台获取授权，您需要点击同意�
 
 首先您需要到腾讯云官网获取[云 API 密钥](https://console.cloud.tencent.com/cam/capi)，然后在终端中输入下面的命令：
 
-```shell
+```sh
 tcb login --key
 ```
 
@@ -62,7 +62,7 @@ tcb login --key
 
 您可以使用下面的命令创建一个项目，创建项目时 Cloudbase CLI 根据您输入的项目名创建一个文件夹，并写入相关的配置和模板文件。
 
-```shell
+```sh
 tcb init
 ```
 
@@ -122,7 +122,7 @@ exports.main = (event, context, callback) => {
 
 最后，在项目根目录下（tcbrc.json 所在目录）运行 `tcb functions:deploy` 命令，即可部署 app 函数
 
-```shell
+```sh
 tcb functions:deploy app
 ```
 

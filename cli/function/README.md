@@ -10,13 +10,13 @@
 
 您可以使用下面的命令列出所有云函数，查看函数的基本信息：
 
-```shell
+```sh
 tcb functions:list
 ```
 
 您会得到类似下面的输出：
 
-```shell
+```sh
 ┌─────────┬───────────┬───────────┬─────────────────────┬─────────────────────┬──────────┐
 │    Id   │   Name    │  Runtime  │       AddTime       │       ModTime       │  Status  │
 ├─────────┼───────────┼───────────┼─────────────────────┼─────────────────────┼──────────┤
@@ -32,14 +32,14 @@ tcb functions:list
 
 默认情况下，`functions:list` 命令只会列出前 20 个函数，如果你的函数较多，需要列出其他的函数，你可以通过下面的选项指定命令返回的数据长度以及数据的偏移量：
 
-```shell
+```sh
 -l, --limit <limit>    返回数据长度，默认值为 20
 -o, --offset <offset>  数据偏移量，默认值为 0
 ```
 
 如：
 
-```shell
+```sh
 # 返回前 10 个函数的信息
 tcb functions:list -l 10
 # 返回第 3 - 22 个函数的信息（包含 3 和 22）
@@ -52,7 +52,7 @@ tcb functions:list -l 20 -o 2
 
 您可以通过下面的命令部署函数：
 
-```shell
+```sh
 functions:deploy <functionName>
 ```
 
@@ -64,14 +64,14 @@ functions:deploy <functionName>
 
 举个例子 🌰：
 
-```shell
+```sh
 # 部署 app 函数
 tcb functions:deploy app
 ```
 
 使用 `functions:deploy` 时，`functionName` 选项是可以省略的，当 `functionName` 省略时，Cloudbase CLI 会部署配置文件中的全部函数：
 
-```shell
+```sh
 # 部署配置文件中的全部函数
 tcb functions:deploy
 ```
@@ -82,7 +82,7 @@ tcb functions:deploy
 
 如果您确定要覆盖可能存在的同名函数，您可以在命令后附加 `--force` 选项指定 Cloudbase CLI 覆盖已存在的函数。
 
-```shell
+```sh
 tcb functions:deploy dev --force
 ```
 
@@ -92,7 +92,7 @@ tcb functions:deploy dev --force
 
 您可以在本地通过 Cloudbase CLI 直接触发您的云函数：
 
-```shell
+```sh
 # 触发 app 函数
 tcb functions:invoke app
 
@@ -104,7 +104,7 @@ tcb functions:invoke
 
 前面提到的 `functions:list` 命令只能查看函数的简单信息，如果您想查看函数的详细信息，您可以使用下面的命令：
 
-```shell
+```sh
 # 查看 app 函数的详情
 tcb functions:detail app
 
@@ -114,7 +114,7 @@ tcb functions:detail
 
 输出
 
-```shell
+```sh
 
 状态：部署完成
 代码大小（B）：1695
@@ -142,7 +142,7 @@ exports.main = async (event, context, callback) => {
 
 您可以通过下面的命令删除函数
 
-```shell
+```sh
 # 删除 app 函数
 tcb functions:delete app
 
@@ -154,7 +154,7 @@ tcb functions:delete
 
 您可以通过下面的命令快速复制一个已经存在的函数：
 
-```shell
+```sh
 # 复制 app 函数为 app2 函数
 functions:copy app app2
 ```
@@ -165,7 +165,7 @@ functions:copy app app2
 
 ### 覆盖同名函数
 
-```shell
+```sh
 # 复制 app 函数为 app2 函数，如果 app2 函数存在，覆盖已经存在的 app2 函数
 functions:copy app app2 --force
 ```

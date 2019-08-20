@@ -8,14 +8,14 @@
 
 您可以通过下面的命令打印云函数的运行日志，使用此命令时必须指定函数的名称：
 
-```shell
+```sh
 # 查看 app 函数的调用日志
 tcb functions:log app
 ```
 
 输出：
 
-```shell
+```sh
 请求时间：2019-08-15 12:12:00
 函数名称：app
 计费时间(ms)：100
@@ -34,7 +34,7 @@ Report RequestId: d451aac7-bf12-11e9-xxxx-525400697544 Duration:0ms Memory:256MB
 
 默认情况下，Cloudbase CLI 会打印最近的 20 条日志，你可以通过在命令后附加下面的可用选项指定返回日志的筛选条件：
 
-```shell
+```sh
 -i, --reqId <reqId>  函数请求 Id
 -o, --offset <offset>                        数据的偏移量，Offset + Limit不能大于10000
 -l, --limit <limit>                          返回数据的长度，Offset + Limit不能大于10000
@@ -48,7 +48,7 @@ Report RequestId: d451aac7-bf12-11e9-xxxx-525400697544 Duration:0ms Memory:256MB
 
 如：`tcb functions:log app -l 2` 打印 `app` 函数的最新 2 条日志信息
 
-```shell
+```sh
 请求时间：2019-08-15 17:04:43
 函数名称：test-scf
 计费时间(ms)：100

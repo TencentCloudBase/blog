@@ -14,7 +14,7 @@
 
 您可以使用下面的命令创建一个触发器：
 
-```shell
+```sh
 # 创建 app 函数配置的触发器
 tcb functions:trigger:create app
 ```
@@ -40,14 +40,14 @@ Cloudbase CLI 会自动读取 `tcbrc.json` 文件中指定函数配置的定时�
 
 您可以使用下面的命令删除函数的触发器：
 
-```shell
+```sh
 # 删除 app 函数的名为 trigger 的触发器
 tcb functions:trigger:delete app trigger
 ```
 
 同样，当没有指定函数名时，Cloudbase CLI 会删除 `tcbrc.json` 文件包含的**所有函数**的**所有触发器**。当只指定了函数名时，Cloudbase CLI 会删除指定函数的所有触发器，当同时指定了函数名称和触发器名称时，Cloudbase CLI 只会删除指定的触发器。
 
-```shell
+```sh
 # 删除 tcbrc.json 文件中所有函数的所有触发器
 tcb functions:trigger:delete
 
