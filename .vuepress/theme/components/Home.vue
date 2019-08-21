@@ -217,14 +217,14 @@ $mobile-width: 1023px;
         display: inline-block;
         font-size: 1.2rem;
         color: #fff;
-        background-color: #3eaf7c;
+        background-color: #006eff;
         padding: .8rem 1.6rem;
         border-radius: 4px;
         transition: background-color .2s ease;
         box-sizing: border-box;
 
         &:hover {
-          background-color: #4abf8a;
+          background-color: #006eff;
         }
       }
     }
@@ -301,6 +301,7 @@ $mobile-width: 1023px;
       line-height: 30px;
       height: 30px;
       color: #2c3e50;
+      font-weight: bold;
 
       @media (max-width: $mobile-width) {
         font-size: 18px;

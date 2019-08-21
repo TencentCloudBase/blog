@@ -7,7 +7,7 @@ module.exports = {
   editLinkText: '在 GitHub 上编辑此页',
   lastUpdated: '更新于',
   sidebar,
-  logo: '/favicon.ico',
+  logo: '/favicon.png',
   nav: [
     { 
       text: '指南', 
@@ -55,9 +55,13 @@ module.exports = {
         { text: 'Node', link: '/SDK%20文档/服务端%20SDK/概览.html' },
         { text: '小程序', link: '/SDK%20文档/客户端%20SDK/小程序端%20SDK.html' },
         { text: 'Java', link: '/404.html' },
-        { text: 'Python', link: '/404.html' },
+        { text: 'Python', link: '/404/' },
         { text: 'JavaScript', link: '/SDK%20文档/客户端%20SDK/Web%20端%20SDK/概述.html' },
       ]
+    },
+    {
+      text: 'CLI',
+      link: '/cli/'
     },
     {
       text: '技术分享',
