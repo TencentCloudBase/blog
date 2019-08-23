@@ -1,4 +1,4 @@
-# Cloudbase CLI 简介
+# [Cloudbase CLI](https://github.com/TencentCloudBase/cloud-base-cli)
 
 ![npm (tag)](https://img.shields.io/npm/v/@cloudbase/cli) ![npm (tag)](https://img.shields.io/npm/v/@cloudbase/cli/beta)
 
