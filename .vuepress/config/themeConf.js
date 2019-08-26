@@ -59,10 +59,10 @@ module.exports = {
         { text: 'JavaScript', link: '/SDK%20文档/客户端%20SDK/Web%20端%20SDK/概述.html' },
       ]
     },
-    {
-      text: 'CLI',
-      link: '/cli/'
-    },
+    // {
+    //   text: 'CLI',
+    //   link: '/cli/'
+    // },
     {
       text: '技术分享',
       items: [
