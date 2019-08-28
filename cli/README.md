@@ -68,7 +68,9 @@ tcb init
 
 ### 2. 编写函数
 
-为了规范使用，所有 Node 和 PHP 函数都统一存放在 `functions` 目录下，并以函数名作为文件夹名称，如 `functions/tcb/index.js`。**对于 Java 函数时，则需要将 jar 文件名修改为函数名称，放在 `functions` 目录下即可，如 `functions/tcb.jar`**。
+默认情况下，所有 Node 和 PHP 函数都统一存放在 `functions` 目录下，并以函数名作为文件夹名称，如 `functions/tcb/index.js`。**对于 Java 函数时，则需要将 jar 文件名修改为函数名称，放在 `functions` 目录下即可，如 `functions/tcb.jar`**。
+
+如果你想将函数存放在其他目录，你可以通过配置文件中的 `functionRoot` 选项指定你想存放函数的目录，`functionRoot` 选项代表了云函数文件夹相对于项目根目录的路径。
 
 例如，创建一个 Node.js 函数 app，下面是 `functions/app/index.js` 的内容
 

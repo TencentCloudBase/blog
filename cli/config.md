@@ -10,6 +10,12 @@
 
 envId 代表环境 ID，是环境的唯一标识。
 
+### functionRoot
+
+**类型**：`String`
+
+函数代码存放的文件夹路径，相对于项目根目录的路径。
+
 ### functions
 
 **类型**：[CloudFunction](#cloudfunction) 组成的数组
@@ -58,6 +64,8 @@ envId 代表环境 ID，是环境的唯一标识。
 {
     // 关联环境 ID
     "envId": "dev-xxxx",
+    // 云函数文件夹名称，相对路径，可以省略 './
+    "functionRoot": "functions",
     // 函数配置
     "functions": [
         {

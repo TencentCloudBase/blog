@@ -19,6 +19,58 @@ client
 
 ## Client 类方法
 
+#### login(options)
+
+参数（选填）：
+
+```js
+{
+    key: '',
+    secretId: ''
+    secretKey: ''
+}
+```
+
+响应：
+
+```
+{
+    code: 'SUCCESS',
+    msg: '登录成功！'
+}
+```
+
+所有响应体：
+
+```js
+{
+    SUCCESS: {
+        code: 'SUCCESS',
+        msg: '登录成功！'
+    },
+    INVALID_TOKEN: {
+        code: 'INVALID_TOKEN',
+        msg: '无效的身份信息！'
+    },
+    CHECK_LOGIN_FAILED: {
+        code: 'CHECK_LOGIN_FAILED',
+        msg: '检查登录态失败'
+    },
+    INVALID_PARAM(msg) {
+        return {
+            code: 'INVALID_PARAM',
+            msg: '参数无效：详细信息'
+        }
+    },
+    UNKNOWN_ERROR(msg) {
+        return {
+            code: 'UNKNOWN_ERROR',
+            msg: '未知错误：详细信息'
+        }
+    }
+}
+```
+
 #### env.list()
 
 参数： 无
@@ -201,7 +253,9 @@ deleted: number
     envId: string,
     functionName: string,
     force: boolean,
-    // 函数代码 base64 编码形式
+    // 函数文件夹的绝对路径
+    functionRootPath: '/Users/user-a/desktop/function',
+    // 函数代码 ZIP 文件 base64 编码
     base64Code: base64String,
     func: {
         // 函数名
