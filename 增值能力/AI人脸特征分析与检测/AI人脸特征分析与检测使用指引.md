@@ -48,9 +48,9 @@
 
     ```javascript
     wx.cloud.callFunction({
-      name: "tcbService-ai-detectFace",
+      name: 'tcbService-ai-detectFace',
       data: {
-        FileID: ""
+        FileID: ''
         /* ...
          * other data
          **/
@@ -69,14 +69,14 @@
     将其中的 `dist/tcb-service-mp-sdk/index.js` 拷贝到小程序项目中，作为外部库，可以将其放置在小程序项目 `/client/libs/tcb-service-mp-sdk/index.js`。在项目中可以通过如下方式调用：
 
     ```javascript
-    import TcbService from "路径/tcb-service-sdk/index"; // sdk path
+    import TcbService from '路径/tcb-service-sdk/index'; // sdk path
     const tcbService = new TcbService();
 
     tcbService.callService({
-      service: "ai",
-      action: "tcbService-ai-detectFace",
+      service: 'ai',
+      action: 'tcbService-ai-detectFace',
       data: {
-        FileID: ""
+        FileID: ''
         /* ...
          * other data
          **/
@@ -96,8 +96,8 @@
 
 | 参数名               | 解释                                                                                                                                                                                                                                                                                                                                                               | 类型   | 必选 | 默认值 |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ---- | ------ |
-| MaxFaceNum           | 最多处理的人脸数目。默认值为 1（仅检测图片中面积最大的那张人脸），最大值为 30。 <br />此参数用于控制处理待检测图片中的人脸个数，值越小，处理速度越快。                                                                                                                                                                                                             | Number | 否   | 1      |
-| MinFaceSize          | 人脸长和宽的最小尺寸，单位为像素。默认为 40。低于此尺寸的人脸不会被检测。                                                                                                                                                                                                                                                                                          | Number | 否   | 40     |
+| MaxFaceNum           | 最多处理的人脸数目。默认值为 1（仅检测图片中面积最大的那张人脸），最大值为 120。 <br />此参数用于控制处理待检测图片中的人脸个数，值越小，处理速度越快。                                                                                                                                                                                                            | Number | 否   | 1      |
+| MinFaceSize          | 人脸长和宽的最小尺寸，单位为像素。默认为 40，低于此尺寸的人脸不会被检测。                                                                                                                                                                                                                                                                                          | Number | 否   | 40     |
 | FileID               | 云开发 uploadFile 得到的 fileID, 支持直接使用云端的图片进行分析                                                                                                                                                                                                                                                                                                    | String | 否   |
 | Url                  | 图片的 Url，存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。<br /> 非腾讯云存储的 Url 速度和稳定性可能受一定影响。支持 PNG、JPG、JPEG、BMP，不支持 GIF 图片。                                                                                                                                                                                 | String | 否   |        |
 | Image                | 图片 base64 数据。支持 PNG、JPG、JPEG、BMP，不支持 GIF 图片。<br />FileID、Url、Image 必须提供一个，生效优先级 FileID > Url > Image                                                                                                                                                                                                                                | String | 否   |
