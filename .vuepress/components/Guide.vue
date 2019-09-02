@@ -63,6 +63,7 @@
               formatDay: this.formatDate(new Date(post.lastUpdated))
             };
           })
+          .filter(item => item.filename !== 'guide')
           .sort((a, b) => b.updateTimestamp - a.updateTimestamp)
           .slice(0, num);
       },
