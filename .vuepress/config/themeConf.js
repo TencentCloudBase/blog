@@ -68,7 +68,6 @@ module.exports = {
         { text: '视频教学', link: '/技术分享/视频教学/基础教程/1.小程序-云开发-概念基础.html' },
         { text: '最佳实践', link: '/技术分享/实战分享/Taro商城实战.html' },
         { text: '客户案例', link: '/技术分享/客户案例/猫眼.html' },
-        { text: '每周分享', link: '/404.html' },
       ]
     },
     {

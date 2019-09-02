@@ -104,7 +104,7 @@ export default {
               href: '/开发指南/多端快速入门/小程序端快速入门/入门概述.html'
             },
             {
-              name: 'Web',
+              name: '网站',
               href: '/开发指南/多端快速入门/Web端快速入门/入门概述.html'
             },
           ]
@@ -133,10 +133,10 @@ export default {
               name: 'AI智能图像',
               href: '/增值能力/AI人脸特征分析与检测/AI人脸特征检测与分析介绍.html'
             },
-            {
-              name: '智能客服',
-              href: '/404.html'
-            }
+            // {
+            //   name: '智能客服',
+            //   href: '/404.html'
+            // }
           ]
         },
         {
@@ -152,7 +152,7 @@ export default {
             },
             {
               name: 'PHP',
-              href: '/404.html'
+              href: '/SDK%20文档/PHP%20SDK/0.介绍.html'
             }
           ]
         }
