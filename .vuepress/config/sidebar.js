@@ -4,7 +4,7 @@ const 开发指南 = [
     collapsable: false,
     children: [
       {
-        title: '小程序端快速入门',
+        title: '小程序快速入门',
         collapsable: false,
         children: [
           ['多端快速入门/小程序端快速入门/入门概述','入门概述'],
@@ -15,7 +15,7 @@ const 开发指南 = [
         ]
       },
       {
-        title: 'Web端快速入门',
+        title: '网站快速入门',
         collapsable: false,
         children: [
           ['多端快速入门/Web端快速入门/入门概述','入门概述'],
@@ -36,7 +36,7 @@ const 开发指南 = [
         collapsable: false,
         children: [
           {
-            title: '小程序端',
+            title: '小程序',
             collapsable: false,
             children: [
               ['能力详解/数据库/小程序端/概述','概述'],
@@ -54,7 +54,7 @@ const 开发指南 = [
             ]
           },
           {
-            title: 'Web端',
+            title: '网站',
             collapsable: false,
             children: [
               ['能力详解/数据库/Web端/概述','概述'],
@@ -78,7 +78,7 @@ const 开发指南 = [
         collapsable: false,
         children: [
           {
-            title: '小程序端',
+            title: '小程序',
             collapsable: false,
             children: [
               ['能力详解/云存储/小程序端/概述','概述'],
@@ -91,7 +91,7 @@ const 开发指南 = [
             ]
           },
           {
-            title: 'Web端',
+            title: '网站',
             collapsable: false,
             children: [
               ['能力详解/云存储/Web端/概述','概述'],
@@ -109,7 +109,7 @@ const 开发指南 = [
         collapsable: false,
         children: [
           {
-            title: '小程序端',
+            title: '小程序',
             collapsable: false,
             children: [
               ['能力详解/云函数/小程序端/概述','概述'],
@@ -126,7 +126,7 @@ const 开发指南 = [
             ]
           },
           {
-            title: 'Web端',
+            title: '网站',
             collapsable: false,
             children: [
               ['能力详解/云函数/Web端/概述','概述'],
@@ -148,7 +148,7 @@ const 开发指南 = [
         collapsable: false,
         children: [
           {
-            title: '小程序端',
+            title: '小程序',
             collapsable: false,
             children: [
               ['能力详解/云调用/小程序端/能力概览','能力概览'],

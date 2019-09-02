@@ -15,35 +15,35 @@ module.exports = {
         {
           text: '快速入门',
           items: [
-            { text: '小程序端', link: '/开发指南/多端快速入门/小程序端快速入门/入门概述.html' },
-            { text: 'Web端', link: '/开发指南/多端快速入门/Web端快速入门/入门概述.html' },
+            { text: '小程序', link: '/开发指南/多端快速入门/小程序端快速入门/入门概述.html' },
+            { text: 'Web', link: '/开发指南/多端快速入门/Web端快速入门/入门概述.html' },
           ]
         },
         {
           text: '数据库',
           items: [
-            { text: '小程序端', link: '/开发指南/能力详解/数据库/小程序端/概述.html' },
-            { text: 'Web端', link: '/开发指南/能力详解/数据库/Web端/概述.html' },
+            { text: '小程序', link: '/开发指南/能力详解/数据库/小程序端/概述.html' },
+            { text: 'Web', link: '/开发指南/能力详解/数据库/Web端/概述.html' },
           ]
         },
         {
           text: '云函数',
           items: [
-            { text: '小程序端', link: '/开发指南/能力详解/云函数/小程序端/概述.html' },
-            { text: 'Web端', link: '/开发指南/能力详解/云函数/Web端/概述.html' },
+            { text: '小程序', link: '/开发指南/能力详解/云函数/小程序端/概述.html' },
+            { text: 'Web', link: '/开发指南/能力详解/云函数/Web端/概述.html' },
           ]
         },
         {
           text: '存储',
           items: [
-            { text: '小程序端', link: '/开发指南/能力详解/数据库/小程序端/概述.html' },
-            { text: 'Web端', link: '/开发指南/能力详解/数据库/Web端/概述.html' },
+            { text: '小程序', link: '/开发指南/能力详解/数据库/小程序端/概述.html' },
+            { text: 'Web', link: '/开发指南/能力详解/数据库/Web端/概述.html' },
           ]
         },
         {
           text: '云调用',
           items: [
-            { text: '小程序端', link: '/开发指南/能力详解/云调用/小程序端/能力概览.html'},
+            { text: '小程序', link: '/开发指南/能力详解/云调用/小程序端/能力概览.html'},
           ]
         }
       ]
@@ -64,10 +64,11 @@ module.exports = {
     {
       text: '技术分享',
       items: [
-        { text: 'Demos', link: '/技术分享/官方教程/树洞小程序.html' },
-        { text: '视频教学', link: '/技术分享/视频教学/基础教程/1.小程序-云开发-概念基础.html' },
-        { text: '最佳实践', link: '/技术分享/实战分享/Taro商城实战.html' },
+        { text: '官方教程', link: '/技术分享/官方教程/树洞小程序.html' },
+        { text: '实战分享', link: '/技术分享/实战分享/Taro商城实战.html' },
         { text: '客户案例', link: '/技术分享/客户案例/猫眼.html' },
+        { text: '洞察', link: '/技术分享/洞察/从前端到全栈.html' },
+        { text: '视频教学', link: '/技术分享/视频教学/基础教程/1.小程序-云开发-概念基础.html' },
       ]
     },
     {
