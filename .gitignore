@@ -4,3 +4,4 @@ node_modules
 
 # vuepress 
 dist
+.vuepress/config/sidebar-auto.js
