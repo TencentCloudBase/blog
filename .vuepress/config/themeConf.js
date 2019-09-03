@@ -1,4 +1,4 @@
-const sidebar = require('./sidebar')
+const sidebar = require('./sidebar-auto')
 
 module.exports = {
   repo: 'TencentCloudBase/blog',
