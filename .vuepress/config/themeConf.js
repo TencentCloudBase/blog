@@ -20,10 +20,10 @@ module.exports = {
           ]
         },
         {
-          text: '数据库',
+          text: '云数据库',
           items: [
-            { text: '小程序', link: '/docs/开发指南/1.能力详解/0.数据库/0.小程序端/0.概述.html' },
-            { text: 'Web', link: '/docs/开发指南/1.能力详解/0.数据库/1.Web端/0.概述.html' },
+            { text: '小程序', link: '/docs/开发指南/1.能力详解/0.云数据库/0.小程序端/0.概述.html' },
+            { text: 'Web', link: '/docs/开发指南/1.能力详解/0.云数据库/1.Web端/0.概述.html' },
           ]
         },
         {
