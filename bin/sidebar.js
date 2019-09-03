@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const ejs = require('ejs')
+const logger = require('tracer').colorConsole()
 
 const docsRoot = path.join(__dirname, '..', 'docs')
 const sidebarPath = path.join(__dirname, '..', '.vuepress', 'config', 'sidebar-auto.js')
@@ -76,6 +77,10 @@ function mapTocToSidebar(root, prefix) {
     if (isNaN(order) || order < 0) {
       return
     }
+
+    if (sidebar[order]) {
+      logger.warn(`For ${file}, its order has appeared in the same level directory. And it will be rewritten.`)
+    }
   
     if (stat.isDirectory()) {
       sidebar[order] = {
@@ -85,6 +90,7 @@ function mapTocToSidebar(root, prefix) {
       }
     } else {
       if (type !== 'md') {
+        logger.error(`For ${file}, its type is not supported.`)
         return
       }
       sidebar[order] = [prefix + filename, title]
