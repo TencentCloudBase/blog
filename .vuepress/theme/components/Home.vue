@@ -101,11 +101,11 @@ export default {
           rows: [
             {
               name: '小程序',
-              href: '/docs/开发指南/0.多端快速入门/0.小程序端快速入门/0.入门概述.html'
+              href: '/2019-09-03-wx-dev-guide-summary/'
             },
             {
               name: '网站',
-              href: '/docs/开发指南/0.多端快速入门/1.Web端快速入门/0.入门概述.html'
+              href: '/2019-09-03-web-dev-guide-summary/'
             },
           ]
         },
@@ -114,15 +114,15 @@ export default {
           rows: [
             {
               name: '云函数',
-              href: '/docs/开发指南/1.能力详解/2.云函数/0.小程序端/0.概述.html'
+              href: '/2019-09-03-wx-cloudfunction-summary/'
             },
             {
               name: '云数据库',
-              href: '/docs/开发指南/1.能力详解/0.数据库/0.小程序端/0.概述.html'
+              href: '/2019-09-03-wx-clouddatabase-summary/'
             },
             {
               name: '云存储',
-              href: '/docs/开发指南/1.能力详解/1.云存储/0.小程序端/0.概述.html'
+              href: '/2019-09-03-wx-cloudstorage-summary/'
             },
           ]
         },
@@ -131,7 +131,7 @@ export default {
           rows: [
             {
               name: 'AI智能图像',
-              href: '/docs/增值能力/3.AI人脸特征分析与检测/0.AI人脸特征检测与分析介绍.html'
+              href: '/2019-09-03-value-added-AI-face-detection-intro/'
             },
             // {
             //   name: '智能客服',
@@ -152,7 +152,7 @@ export default {
             },
             {
               name: 'PHP',
-              href: '/docs/SDK%20文档/0.PHP%20SDK/0.介绍.html'
+              href: '/2019-09-03-PHP-SDK-introduction/'
             }
           ]
         }

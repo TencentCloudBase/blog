@@ -1,19 +1,25 @@
 <template>
   <div>
     <ul class="page-guide-ul">
-      <li class="page-guide-row"
-          v-for="(post, index) in topPublishPosts"
-          :key="index"
-          href="post">
-        <a :href="post.regularPath">《{{post.filename}}》</a>
+      <li
+        class="page-guide-row"
+        v-for="(post, index) in topPublishPosts"
+        :key="index"
+        href="post"
+      >
+        <a :href="post.path">《{{post.frontmatter.title}}》</a>
         <span>{{ post.formatDay }}</span>
       </li>
     </ul>
 
-    <div @click="loadMore"
-         class="page-guide-btn"
-         v-if="showBtn">
-      <div ref="btn">{{btnInfo}}</div>
+    <div 
+      @click="loadMore"  
+      class="page-guide-btn"
+      v-if="showBtn"
+    >
+      <div ref="btn">
+        {{btnInfo}}
+      </div>
     </div>
 
   </div>
@@ -46,24 +52,19 @@
     methods: {
       getTopKPosts(num) {
         const re = /.*\/(.*?)\.(html|md)/;
-        const renderTitleDir = ['cli'];
 
         return this.posts
+          .filter(post => {
+            const { frontmatter } = post;
+            return frontmatter && frontmatter.permalink && frontmatter.title;
+          })
           .map(post => {
-            const isRenderTitle = renderTitleDir.some(item =>
-              post.relativePath.includes(item)
-            );
-            const execs = isRenderTitle
-              ? { 1: post.title }
-              : re.exec(post.relativePath);
             return {
               ...post,
               updateTimestamp: new Date(post.lastUpdated).getTime(),
-              filename: execs ? execs['1'] : '',
-              formatDay: this.formatDate(new Date(post.lastUpdated))
+              formatDay: this.formatDate(new Date(post.lastUpdated)),
             };
           })
-          .filter(item => item.filename !== 'guide')
           .sort((a, b) => b.updateTimestamp - a.updateTimestamp)
           .slice(0, num);
       },
