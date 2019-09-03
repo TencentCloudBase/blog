@@ -101,11 +101,11 @@ export default {
           rows: [
             {
               name: '小程序',
-              href: '/开发指南/多端快速入门/小程序端快速入门/入门概述.html'
+              href: '/docs/开发指南/0.多端快速入门/0.小程序端快速入门/0.入门概述.html'
             },
             {
               name: '网站',
-              href: '/开发指南/多端快速入门/Web端快速入门/入门概述.html'
+              href: '/docs/开发指南/0.多端快速入门/1.Web端快速入门/0.入门概述.html'
             },
           ]
         },
@@ -114,15 +114,15 @@ export default {
           rows: [
             {
               name: '云函数',
-              href: '/开发指南/能力详解/云函数/小程序端/概述.html'
+              href: '/docs/开发指南/1.能力详解/2.云函数/0.小程序端/0.概述.html'
             },
             {
               name: '云数据库',
-              href: '/开发指南/能力详解/数据库/小程序端/概述.html'
+              href: '/docs/开发指南/1.能力详解/0.数据库/0.小程序端/0.概述.html'
             },
             {
               name: '云存储',
-              href: '/开发指南/能力详解/云存储/小程序端/概述.html'
+              href: '/docs/开发指南/1.能力详解/1.云存储/0.小程序端/0.概述.html'
             },
           ]
         },
@@ -131,7 +131,7 @@ export default {
           rows: [
             {
               name: 'AI智能图像',
-              href: '/增值能力/AI人脸特征分析与检测/AI人脸特征检测与分析介绍.html'
+              href: '/docs/增值能力/3.AI人脸特征分析与检测/0.AI人脸特征检测与分析介绍.html'
             },
             // {
             //   name: '智能客服',
@@ -143,16 +143,16 @@ export default {
           title: 'SDK',
           rows: [
             {
-              name: 'Node',
-              href: '/SDK%20文档/服务端%20SDK/概览.html'
+              name: 'NodeJS',
+              href: '/docs/SDK%20文档/服务端%20SDK/概览.html'
             },
             {
               name: 'JavaScript',
-              href: '/SDK%20文档/客户端%20SDK/Web%20端%20SDK/概述.html'
+              href: '/docs/SDK%20文档/客户端%20SDK/Web%20端%20SDK/概述.html'
             },
             {
               name: 'PHP',
-              href: '/SDK%20文档/PHP%20SDK/0.介绍.html'
+              href: '/docs/SDK%20文档/0.PHP%20SDK/0.介绍.html'
             }
           ]
         }
