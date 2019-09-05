@@ -70,7 +70,7 @@ module.exports = {
     {
       text: '了解更多',
       items: [
-        { text: '云开发主页', link: 'https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-http-api/' },
+        { text: '云开发主页', link: 'https://cloud.tencent.com/product/tcb' },
         { text: '更新日志', link: '/log/' },
       ]
     }
