@@ -225,4 +225,6 @@ Page({
 
 ---
 
-如果你想要了解更多关于云开发CloudBase相关的技术故事/技术实战经验，请扫码关注【腾讯云云开发】公众号～![在这里插入图片描述](https://img-blog.csdnimg.cn/20190910094810571.png#pic_center)
+如果你想要了解更多关于云开发CloudBase相关的技术故事/技术实战经验，请扫码关注【腾讯云云开发】公众号～
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190910094810571.png#pic_center)
