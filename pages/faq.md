@@ -7,7 +7,7 @@ sidebar: "auto"
 
 这里罗列的是腾讯云开发产品使用过程中，用户提问最频繁的问题。若你在这里无法找到问题的答案，请访问 [TencentCloudBase Issues](https://github.com/TencentCloudBase/blog/issues)，提交你的问题。
 
-## 怎么在云开发的云函数中使用当前环境的资源？
+## 怎样在云开发的云函数中使用当前环境的资源？
 
 云函数中初始化云开发实例时（`wx-server-sdk` 以及 `tcb-admih-node`）, 缺省 `env` 参数时，将默认访问**第一个创建**的环境。在云函数中一般建议使用当前的环境来初始化云开发实例。
 
@@ -33,8 +33,8 @@ exports.main = async (event) => {
 
 在 `tcb-admin-node` 中, 可以使用 `.getCurrentEnv` 方法获取当前环境：
 
-```
-const tcb = require('tcb-admin-node');
+```js
+const tcb = require('tcb-admin-node')
 
 exports.main = async (event) => {
   let env = tcb.getCurrentEnv()
