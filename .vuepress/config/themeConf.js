@@ -68,6 +68,14 @@ module.exports = {
       ]
     },
     {
+      text: '开发者活动',
+      items: [
+        { text: '训练营', link: '/docs/训练营/小程序开发/小程序开发入门.html' },
+        { text: '校园技术工坊', link: '' },
+        { text: '云开发技术圈', link: '' },
+      ]
+    },
+    {
       text: '了解更多',
       items: [
         { text: '云开发主页', link: 'https://cloud.tencent.com/product/tcb' },
