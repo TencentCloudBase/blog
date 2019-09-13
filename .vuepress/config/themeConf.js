@@ -70,9 +70,9 @@ module.exports = {
     {
       text: '开发者活动',
       items: [
-        { text: '训练营', link: '/docs%20开发者活动%20小程序云开发线上训练营.html' },
+        { text: '训练营', link: '/docs/开发者活动/小程序云开发线上训练营.html' },
         { text: '校园技术工坊', link: 'https://mp.weixin.qq.com/s/0gjrK-HbWHQHC5MuCvayqQ' },
-        { text: '云开发技术圈', link: '/docs%20开发者活动%20小程序云开发城市技术圈.html' },
+        { text: '云开发技术圈', link: '/docs/开发者活动/小程序云开发城市技术圈.html' },
       ]
     },
     {
