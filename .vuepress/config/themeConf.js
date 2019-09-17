@@ -70,7 +70,7 @@ module.exports = {
     {
       text: '开发者活动',
       items: [
-        { text: '训练营', link: '/docs/开发者活动/小程序云开发线上训练营.html' },
+        { text: '训练营', link: 'https://mp.weixin.qq.com/s?__biz=Mzg3NTA1NjcyNQ==&mid=2247485228&idx=1&sn=069ea0527edc0ac871f6865b40c94d42&chksm=cec61c16f9b195004ce4b19cf6fc735ef4c4868a4a88f12817410ba4e0764a3b4f85525bf75a&token=1201380652&lang=zh_CN' },
         { text: '校园技术工坊', link: 'https://mp.weixin.qq.com/s/0gjrK-HbWHQHC5MuCvayqQ' },
         { text: '云开发技术圈', link: '/docs/开发者活动/小程序云开发城市技术圈.html' },
       ]
