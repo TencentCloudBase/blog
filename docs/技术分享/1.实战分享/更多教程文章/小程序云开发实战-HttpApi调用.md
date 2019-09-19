@@ -314,12 +314,12 @@ module.exports = app;
    
    #### 过程中遇到的问题
    
-   1. 在post获取数据库集合信息时，**第三方返回错误码“47001”**  
+   - 在post获取数据库集合信息时，**第三方返回错误码“47001”**  
    在网上查了下，有很多遇到这个问题的。但如何解决说的大都不明不白，或者未解决，或者解决了帖子未更新。   
    
-   2. 本人遇到该问题时，先是在官方社区搜索了相关提问，发现官方回复，在postman上尝试调用如果无恙请检查自身代码。
+   - 本人遇到该问题时，先是在官方社区搜索了相关提问，发现官方回复，在postman上尝试调用如果无恙请检查自身代码。
    
-   3. 依言自行在postMan上自行查验一波，发现我不论如何变更入参格式依然是“47001”的报错。此时我的入参如下：
+   - 依言自行在postMan上自行查验一波，发现我不论如何变更入参格式依然是“47001”的报错。此时我的入参如下：
    ```js
    
         {
@@ -330,16 +330,17 @@ module.exports = app;
         }
    
    ```
-   4. 多次查看对应httpApi文档，不断思索问题出在哪里。自身代码也没啥毛病啊，这是为啥呢？会不会是入参的问题呢？access_token已经在请求url上拼过一次是不是入参的时候就不需要了呢？入参的格式是什么呢？post默认的“application/x-www-form-urlencoded”,还是“application/json;”然后再一篇博客中看到，微信提供的接口入参格式为“application/json”。
+   - 多次查看对应httpApi文档，不断思索问题出在哪里。自身代码也没啥毛病啊，这是为啥呢？会不会是入参的问题呢？access_token已经在请求url上拼过一次是不是入参的时候就不需要了呢？入参的格式是什么呢？post默认的“application/x-www-form-urlencoded”,还是“application/json;”然后再一篇博客中看到，微信提供的接口入参格式为“application/json”。
    
-   5. 锁定了入参格式，但是再postMan上我是把所有的入参格式试了一遍的呀，那再试试入参里面去掉access_token呢？
+   - 锁定了入参格式，但是再postMan上我是把所有的入参格式试了一遍的呀，那再试试入参里面去掉access_token呢？
    
-   6. 大功告成。终于见到了正常的返回数据。
+   - 大功告成。终于见到了正常的返回数据。
    
-   7. 总结两点：
-   **1，入参格式采用“application/json; charset=utf-8”;**
+   - 总结两点：
    
-   **2，需要拼接access_token的接口入参请干掉access_token如上文中的代码**
+   **1、入参格式采用“application/json; charset=utf-8”;**
+   
+   **2、需要拼接access_token的接口入参请干掉access_token如上文中的代码**
    
    ## 源码链接
    [https://gitee.com/jioawoxiaoqi/vitaeServer/blob/master/routes/base.js](https://gitee.com/jioawoxiaoqi/vitaeServer/blob/master/routes/base.js)
