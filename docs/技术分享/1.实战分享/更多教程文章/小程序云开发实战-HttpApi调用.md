@@ -285,7 +285,9 @@ module.exports = app;
 ---
 
 至此，小程序云开发----httpApi调用已完成。  
+
 简单的利用**vue+elementui做个云开发小程序后台管理页面调用下上面的接口**。  
+
 我们看下效果如下：
 
 
@@ -295,10 +297,10 @@ module.exports = app;
 
 - 本地启动上面的接口服务及调用结果：
     
-   - **本地启动接口服务**
+   ### 本地启动接口服务
    
    ![本地启动接口服务](http://m.qpic.cn/psb?/V12a5mB10IdFhp/LOqYwnfdrtthoj6QpK0*GT5dlcCBmR2mOSfB5Q0HzLs!/b/dDYBAAAAAAAA&bo=pwK3AwAAAAADFyM!&rf=viewer_4&t=5)
-   - **本地接口调用结果**
+   ### 本地接口调用结果
    
    ![本地接口调用结果](http://m.qpic.cn/psb?/V12a5mB10IdFhp/OEOh8aWJ1.sR55vln74d4WVK*sxIMYBbAETQeu2yOeA!/b/dFMBAAAAAAAA&bo=NQfxAwAAAAADF*I!&rf=viewer_4&t=5)
    
