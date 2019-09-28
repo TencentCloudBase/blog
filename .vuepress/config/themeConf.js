@@ -52,9 +52,9 @@ module.exports = {
       text: 'SDK',
       items: [
         { text: 'PHP', link: '/2019-09-03-PHP-SDK-introduction/' },
-        { text: 'NodeJS', link: '/docs/SDK%20文档/服务端%20SDK/概览.html' },
-        { text: '小程序', link: '/docs/SDK%20文档/客户端%20SDK/小程序端%20SDK.html' },
-        { text: 'JavaScript', link: '/docs/SDK%20文档/客户端%20SDK/Web%20端%20SDK/概述.html' },
+        { text: 'Node.js', link: '/2019-09-28-NODEJS-SDK-overview/' },
+        { text: '小程序', link: '/2019-09-28-MINIPROGRAM-SDK-introduction/' },
+        { text: 'Web', link: '/2019-09-28-WEB-SDK-overview/' },
       ]
     },
     {
