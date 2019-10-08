@@ -4,7 +4,7 @@ const ejs = require('ejs')
 const logger = require('tracer').colorConsole()
 
 const docsRoot = path.join(__dirname, '..', 'docs')
-const sidebarPath = path.join(__dirname, '..', '.vuepress', 'config', 'sidebar-auto.js')
+const sidebarPath = path.join(__dirname, '..', '.vuepress', 'config', 'sidebar.js')
 const template = `
 <% for(let variable of variables) { %>
   const <%- variable.name %> = <%- JSON.stringify(variable.js); %>

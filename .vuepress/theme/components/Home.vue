@@ -13,14 +13,6 @@
         </p>
       </div>
     </div>
-    <!-- <section class="home-page-wrapper" style="padding: 60px;">
-      <div class="home-page-columns">
-        <div class="home-page-column" v-for="(item, index) in abilities" :key="index" style="width: 18%;">
-          <h4>{{item.name}}</h4>
-          <p>{{item.des}}</p>
-        </div>
-      </div>
-    </section> -->
     <section class="home-page-wrapper">
       <div class="home-page-columns">
         <div 
@@ -73,28 +65,6 @@ export default {
 
   data() {
     return {
-      abilities: [
-        {
-          name: '云函数',
-          des: '在云端运行的代码，微信私有天然鉴权，只需编写自身业务逻辑代码'
-        },
-        {
-          name: '数据库',
-          des: '一个既可在小程序前端操作，也能在云函数中读写的 JSON 数据库'
-        },
-        {
-          name: '存储',
-          des: '天然 CDN 加速，在小程序前端直接上传/下载云端文件，可视化管理'
-        },
-        {
-          name: 'AI智能图像',
-          des: '集成智能鉴黄、人脸识别、人脸识别、人脸核身等AI视觉能力'
-        },
-        {
-          name: '智能客服',
-          des: '支持语音和文字识别，轻松构建无服务器应用'
-        }
-      ],
       platforms: [
         {
           title: '支持多端',
