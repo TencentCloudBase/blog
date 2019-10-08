@@ -3,12 +3,12 @@
     <div class="home-page-hero">
       <div class="home-page-hero-inner">
         <h1 class="home-page-hero-title">
-          云开发CloudBase<br/>
+          云+端一体化<br/>
           快速构建小程序、Web和移动应用
         </h1>
         <p class="home-page-hero-btn">
-          <a href="/guide/">
-            了解更多
+          <a href="/start/">
+            入门指南
           </a>
         </p>
       </div>
