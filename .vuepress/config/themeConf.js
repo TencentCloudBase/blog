@@ -58,7 +58,7 @@ module.exports = {
     {
       text: '开发者工具',
       items: [
-        { text: 'CLI', link: '/2019-09-03-cli/' }
+        { text: 'CLI工具', link: '/2019-09-03-cli/' }
       ]
     },
     {

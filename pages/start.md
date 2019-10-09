@@ -4,7 +4,7 @@ permalink: "start"
 comment: false
 ---
 
-云开发（Tencent Cloud Base）是以腾讯云为依托、基于Serverless架构的对端解决方案。解决了Serverless架构对端的“最后一公里”问题，通过集成[端SDK]()，配合云开发后台的API网关，为开发者提供了一站式后端云服务。
+云开发（Tencent Cloud Base）是以腾讯云为依托、基于Serverless架构的对端解决方案。解决了Serverless架构对端的“最后一公里”问题，通过集成[端SDK](/2019-09-28-MINIPROGRAM-SDK-introduction/)，配合云开发后台的API网关，为开发者提供了一站式后端云服务。
 
 云开发支持多种客户端，帮助开发者统一构建和管理资源，免去了应用开发过程中繁琐的服务器搭建及运维、域名注册及备案、数据接口实现等繁琐流程，让开发者可以专注于业务逻辑的实现，而无需理解后端逻辑及服务器运维知识，开发门槛更低，效率更高。
 
@@ -14,7 +14,7 @@ comment: false
 云开发目前支持[小程序端](/2019-09-03-wx-dev-guide-summary)和[Web端](/2019-09-03-web-dev-guide-summary/)，后续会陆续支持Android/IOS端。
 
 ### 能力矩阵
-目前云开发提供了用于支撑完整的后端开发的三种基础能力：[云数据库](./)、[云存储](./)和[云函数](./)。
+目前云开发提供了用于支撑完整的后端开发的三种基础能力：[云数据库](/2019-09-03-clouddatabase-summary/)、[云存储](/2019-09-03-cloudstorage-summary/)和[云函数](/2019-09-03-cloudfunction-summary/)。
 
 #### 云数据库
 文档型数据库包含多个近似于JSON数组的集合，数组中的对象是记录，格式为JSON文档。
@@ -38,9 +38,9 @@ comment: false
 - 消息推送
 
 ### 增值能力
-除了以上三种基本能力之外，云开发整合了腾讯云的以下增值能力：
-- [实时音视频](./)
-- [AI智能图像](https://cloud.tencent.com/document/product/876/32345)，包括：
+除了以上三种基本能力之外，云开发整合了腾讯云的以下[增值能力](/2019-09-03-value-added-cloud-introduction/)：
+- [实时音视频](https://cloud.tencent.com/document/product/876/32344)
+- [AI智能图像](/2019-09-03-value-added-AI-face-detection-intro/)，包括：
   - [人脸识别](https://cloud.tencent.com/product/facerecognition)；
   - [人脸核身](https://cloud.tencent.com/product/faceid)；
   - [人脸融合](https://cloud.tencent.com/product/facefusion)；
