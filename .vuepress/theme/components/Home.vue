@@ -3,24 +3,16 @@
     <div class="home-page-hero">
       <div class="home-page-hero-inner">
         <h1 class="home-page-hero-title">
-          云开发CloudBase<br/>
+          云+端一体化<br/>
           快速构建小程序、Web和移动应用
         </h1>
         <p class="home-page-hero-btn">
-          <a href="/guide/">
-            了解更多
+          <a href="/start/">
+            立即使用
           </a>
         </p>
       </div>
     </div>
-    <!-- <section class="home-page-wrapper" style="padding: 60px;">
-      <div class="home-page-columns">
-        <div class="home-page-column" v-for="(item, index) in abilities" :key="index" style="width: 18%;">
-          <h4>{{item.name}}</h4>
-          <p>{{item.des}}</p>
-        </div>
-      </div>
-    </section> -->
     <section class="home-page-wrapper">
       <div class="home-page-columns">
         <div 
@@ -36,7 +28,10 @@
             v-for="(row, _index) in platform.rows"
             :key="_index"
           >
-            <p><a :href="row.href">{{row.name}}</a></p>
+            <p>
+              <a v-if=row.href class="home-page-column-card__name--linked" :href="row.href">{{row.name}}</a>
+              <span v-else class="home-page-column-card__name--disabled">{{row.name}}</span>
+            </p>
           </div>
         </div>
       </div>
@@ -60,7 +55,7 @@
       </div>
     </section>
     <footer>
-      Copyright © 2019 <a href="https://cloud.tencent.com/developer/team/tcb" target="_blank">Tencent Cloud Base</a>. All Rights Reserved.
+      Copyright © 2019 <a href="https://cloud.tencent.com/product/tcb" target="_blank">Tencent Cloud Base</a>. All Rights Reserved.
     </footer>
   </div>
 </template>
@@ -73,28 +68,6 @@ export default {
 
   data() {
     return {
-      abilities: [
-        {
-          name: '云函数',
-          des: '在云端运行的代码，微信私有天然鉴权，只需编写自身业务逻辑代码'
-        },
-        {
-          name: '数据库',
-          des: '一个既可在小程序前端操作，也能在云函数中读写的 JSON 数据库'
-        },
-        {
-          name: '存储',
-          des: '天然 CDN 加速，在小程序前端直接上传/下载云端文件，可视化管理'
-        },
-        {
-          name: 'AI智能图像',
-          des: '集成智能鉴黄、人脸识别、人脸识别、人脸核身等AI视觉能力'
-        },
-        {
-          name: '智能客服',
-          des: '支持语音和文字识别，轻松构建无服务器应用'
-        }
-      ],
       platforms: [
         {
           title: '支持多端',
@@ -104,8 +77,12 @@ export default {
               href: '/2019-09-03-wx-dev-guide-summary/'
             },
             {
-              name: '网站',
+              name: 'Web&H5',
               href: '/2019-09-03-web-dev-guide-summary/'
+            },
+            {
+              name: '移动应用(即将推出)',
+              href: ''
             },
           ]
         },
@@ -114,15 +91,15 @@ export default {
           rows: [
             {
               name: '云函数',
-              href: '/2019-09-03-wx-cloudfunction-summary/'
+              href: '/2019-09-03-cloudfunction-summary/'
             },
             {
               name: '云数据库',
-              href: '/2019-09-03-wx-clouddatabase-summary/'
+              href: '/2019-09-03-clouddatabase-summary/'
             },
             {
               name: '云存储',
-              href: '/2019-09-03-wx-cloudstorage-summary/'
+              href: '/2019-09-03-cloudstorage-summary/'
             },
           ]
         },
@@ -133,25 +110,29 @@ export default {
               name: 'AI智能图像',
               href: '/2019-09-03-value-added-AI-face-detection-intro/'
             },
-            // {
-            //   name: '智能客服',
-            //   href: '/404.html'
-            // }
+            {
+              name: '实时音视频',
+              href: 'https://cloud.tencent.com/document/product/876/32344'
+            }
           ]
         },
         {
           title: 'SDK',
           rows: [
             {
-              name: 'NodeJS',
-              href: '/docs/SDK%20文档/服务端%20SDK/概览.html'
+              name: '小程序SDK',
+              href: 'https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html'
             },
             {
-              name: 'JavaScript',
-              href: '/docs/SDK%20文档/客户端%20SDK/Web%20端%20SDK/概述.html'
+              name: 'JavaScript SDK',
+              href: '/2019-09-28-WEB-SDK-overview/'
             },
             {
-              name: 'PHP',
+              name: 'NodeJS SDK',
+              href: '/2019-09-28-NODEJS-SDK-overview/'
+            },
+            {
+              name: 'PHP SDK',
               href: '/2019-09-03-PHP-SDK-introduction/'
             }
           ]
@@ -159,7 +140,7 @@ export default {
       ],
       others: [
         {
-          name: '云加社区',
+          name: '云+社区',
           href: 'https://cloud.tencent.com/developer/team/tcb'
         },
         {
@@ -279,6 +260,7 @@ $mobile-width: 1023px;
   }
 
   &-column {
+    text-align: center;
     a {
       color: #595959;
     }
@@ -291,6 +273,12 @@ $mobile-width: 1023px;
 
         @media (max-width: $mobile-width) {
           font-size: 14px;
+        }
+      }
+      &__name{
+        &--disabled{
+          color:#8c8c8c;
+          cursor: normal;
         }
       }
     }

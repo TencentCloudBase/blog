@@ -1,7 +1,8 @@
+yarn.lock
 # npm
 package-lock.json
 node_modules
 
 # vuepress 
 dist
-.vuepress/config/sidebar-auto.js
+.vuepress/config/sidebar.js

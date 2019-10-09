@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'CloudBase',
-  description: 'CloudBase团队博客，这里有文档和教程，也有大神分享，还有我们的故事',
+  title: '云开发-一站式后端云服务',
+  description: '云+端一体化：快速构建小程序、Web和移动应用',
   head: [
     [
       'script',
