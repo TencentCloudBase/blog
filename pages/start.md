@@ -1,7 +1,7 @@
 ---
 title: "入门指南"
 permalink: "start"
-comment: false
+comment: true
 ---
 
 云开发（Tencent Cloud Base）是以腾讯云为依托、基于Serverless架构的对端解决方案。解决了Serverless架构对端的“最后一公里”问题，通过集成[端SDK](/2019-09-28-MINIPROGRAM-SDK-introduction/)，配合云开发后台的API网关，为开发者提供了一站式后端云服务。
@@ -32,7 +32,7 @@ comment: false
 - 弹性伸缩：根据请求量实现毫秒级实时弹性伸缩，函数未执行不产生任何费用。
 
 #### 云调用
-[云调用](/2019-09-03-wx-cloudinvoke-summary)是云开发提供的基于云函数使用小程序开放接口的能力，目前覆盖以下使用场景：
+[云调用](/2019-09-03-cloudinvoke-summary)是云开发提供的基于云函数使用小程序开放接口的能力，目前覆盖以下使用场景：
 - 服务端调用
 - 开放数据调用
 - 消息推送

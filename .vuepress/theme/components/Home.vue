@@ -8,7 +8,7 @@
         </h1>
         <p class="home-page-hero-btn">
           <a href="/start/">
-            入门指南
+            立即使用
           </a>
         </p>
       </div>
@@ -28,7 +28,10 @@
             v-for="(row, _index) in platform.rows"
             :key="_index"
           >
-            <p><a :href="row.href">{{row.name}}</a></p>
+            <p>
+              <a v-if=row.href class="home-page-column-card__name--linked" :href="row.href">{{row.name}}</a>
+              <span v-else class="home-page-column-card__name--disabled">{{row.name}}</span>
+            </p>
           </div>
         </div>
       </div>
@@ -52,7 +55,7 @@
       </div>
     </section>
     <footer>
-      Copyright © 2019 <a href="https://cloud.tencent.com/developer/team/tcb" target="_blank">Tencent Cloud Base</a>. All Rights Reserved.
+      Copyright © 2019 <a href="https://cloud.tencent.com/product/tcb" target="_blank">Tencent Cloud Base</a>. All Rights Reserved.
     </footer>
   </div>
 </template>
@@ -74,8 +77,12 @@ export default {
               href: '/2019-09-03-wx-dev-guide-summary/'
             },
             {
-              name: '网站',
+              name: 'Web&H5',
               href: '/2019-09-03-web-dev-guide-summary/'
+            },
+            {
+              name: '移动应用(即将推出)',
+              href: ''
             },
           ]
         },
@@ -84,15 +91,15 @@ export default {
           rows: [
             {
               name: '云函数',
-              href: '/2019-09-03-wx-cloudfunction-summary/'
+              href: '/2019-09-03-cloudfunction-summary/'
             },
             {
               name: '云数据库',
-              href: '/2019-09-03-wx-clouddatabase-summary/'
+              href: '/2019-09-03-clouddatabase-summary/'
             },
             {
               name: '云存储',
-              href: '/2019-09-03-wx-cloudstorage-summary/'
+              href: '/2019-09-03-cloudstorage-summary/'
             },
           ]
         },
@@ -103,25 +110,29 @@ export default {
               name: 'AI智能图像',
               href: '/2019-09-03-value-added-AI-face-detection-intro/'
             },
-            // {
-            //   name: '智能客服',
-            //   href: '/404.html'
-            // }
+            {
+              name: '实时音视频',
+              href: 'https://cloud.tencent.com/document/product/876/32344'
+            }
           ]
         },
         {
           title: 'SDK',
           rows: [
             {
-              name: 'NodeJS',
-              href: '/docs/SDK%20文档/服务端%20SDK/概览.html'
+              name: '小程序SDK',
+              href: 'https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html'
             },
             {
-              name: 'JavaScript',
-              href: '/docs/SDK%20文档/客户端%20SDK/Web%20端%20SDK/概述.html'
+              name: 'JavaScript SDK',
+              href: '/2019-09-28-WEB-SDK-overview/'
             },
             {
-              name: 'PHP',
+              name: 'NodeJS SDK',
+              href: '/2019-09-28-NODEJS-SDK-overview/'
+            },
+            {
+              name: 'PHP SDK',
               href: '/2019-09-03-PHP-SDK-introduction/'
             }
           ]
@@ -129,7 +140,7 @@ export default {
       ],
       others: [
         {
-          name: '云加社区',
+          name: '云+社区',
           href: 'https://cloud.tencent.com/developer/team/tcb'
         },
         {
@@ -249,6 +260,7 @@ $mobile-width: 1023px;
   }
 
   &-column {
+    text-align: center;
     a {
       color: #595959;
     }
@@ -261,6 +273,12 @@ $mobile-width: 1023px;
 
         @media (max-width: $mobile-width) {
           font-size: 14px;
+        }
+      }
+      &__name{
+        &--disabled{
+          color:#8c8c8c;
+          cursor: normal;
         }
       }
     }
