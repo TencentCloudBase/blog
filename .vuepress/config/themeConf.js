@@ -64,9 +64,9 @@ module.exports = {
     {
       text: '案例教学',
       items: [
-        { text: '视频教程', link: '/tutorials/videos-courses/' },
-        { text: '官方案例', link: '/tutorials/official-examples/' },
-        { text: '项目实战', link: '/tutorials/real-projects/' }
+        { text: '视频教程', link: '/tutorials/video-courses/share-miniprogram-cloud-basic-concept/' },
+        { text: '官方案例', link: '/tutorials/official-examples/share-tree-hole/' },
+        { text: '项目实战', link: '/tutorials/real-projects/share-maoyan/' }
       ]
     },
     {
@@ -74,7 +74,7 @@ module.exports = {
       items: [
         { text: '训练营', link: 'https://mp.weixin.qq.com/s/nFCtlERfhv2FMrNgHei7cQ' },
         { text: '校园技术工坊', link: 'https://mp.weixin.qq.com/s/0gjrK-HbWHQHC5MuCvayqQ' },
-        { text: '云开发技术圈', link: '/开发者活动/小程序云开发城市技术圈.html' },
+        { text: '云开发技术圈', link: '/activities/wcc' },
       ]
     },
     {
