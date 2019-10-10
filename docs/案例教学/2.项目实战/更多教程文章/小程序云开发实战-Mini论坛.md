@@ -1,4 +1,10 @@
 ---
+title: "Mini论坛"
+date: "2019-08-06"
+permalink: "2019-08-06-share-Mini forum"
+---
+
+---
 title: 【小程序+云开发】实战：一天搭建小型论坛
 categories:
   - 软件开发
