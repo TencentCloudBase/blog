@@ -74,11 +74,11 @@ export default {
           rows: [
             {
               name: '小程序',
-              href: '/2019-09-03-wx-dev-guide-summary/'
+              href: '/docs/wx-dev-guide-summary/'
             },
             {
               name: 'Web&H5',
-              href: '/2019-09-03-web-dev-guide-summary/'
+              href: '/docs/web-dev-guide-summary/'
             },
             {
               name: '移动应用(即将推出)',
@@ -91,15 +91,15 @@ export default {
           rows: [
             {
               name: '云函数',
-              href: '/2019-09-03-cloudfunction-summary/'
+              href: '/docs/cloudfunction-summary/'
             },
             {
               name: '云数据库',
-              href: '/2019-09-03-clouddatabase-summary/'
+              href: '/docs/clouddatabase-summary/'
             },
             {
               name: '云存储',
-              href: '/2019-09-03-cloudstorage-summary/'
+              href: '/docs/cloudstorage-summary/'
             },
           ]
         },
@@ -108,7 +108,7 @@ export default {
           rows: [
             {
               name: 'AI智能图像',
-              href: '/2019-09-03-value-added-AI-face-detection-intro/'
+              href: '/docs/value-added-AI-face-detection-intro/'
             },
             {
               name: '实时音视频',
@@ -125,15 +125,15 @@ export default {
             },
             {
               name: 'JavaScript SDK',
-              href: '/2019-09-28-WEB-SDK-overview/'
+              href: '/docs/WEB-SDK-overview/'
             },
             {
               name: 'NodeJS SDK',
-              href: '/2019-09-28-NODEJS-SDK-overview/'
+              href: '/docs/NODEJS-SDK-overview/'
             },
             {
               name: 'PHP SDK',
-              href: '/2019-09-03-PHP-SDK-introduction/'
+              href: '/docs/PHP-SDK-introduction/'
             }
           ]
         }

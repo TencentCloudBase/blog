@@ -11,8 +11,8 @@ module.exports = {
     { 
       text: '快速入门', 
       items: [
-        { text: '小程序', link: '/2019-09-03-wx-dev-guide-summary/' },
-        { text: 'Web', link: '/2019-09-03-web-dev-guide-summary/' },
+        { text: '小程序', link: '/docs/wx-dev-guide-summary/' },
+        { text: 'Web', link: '/docs/web-dev-guide-summary/' },
       ]
     },
     {
@@ -21,17 +21,17 @@ module.exports = {
         {
           text: '基础能力',
           items: [
-            {text: '云数据库',link: '/2019-09-03-clouddatabase-summary/'},
-            {text: '云函数',link: '/2019-09-03-cloudfunction-summary/'},
-            {text: '云存储',link: '/2019-09-03-cloudstorage-summary/'},
-            {text: '云调用',link: '/2019-09-03-cloudinvoke-summary/'}
+            {text: '云数据库',link: '/docs/clouddatabase-summary/'},
+            {text: '云函数',link: '/docs/cloudfunction-summary/'},
+            {text: '云存储',link: '/docs/cloudstorage-summary/'},
+            {text: '云调用',link: '/docs/cloudinvoke-summary/'}
           ]
         },
         {
           text: '增值能力',
           items: [
             { text: '实时音视频', link: 'https://cloud.tencent.com/document/product/876/32344'},
-            { text: 'AI智能图像', link: '/2019-09-03-value-added-AI-face-detection-intro/'}
+            { text: 'AI智能图像', link: '/docs/value-added-AI-face-detection-intro/'}
           ]
         }
       ]
@@ -42,15 +42,15 @@ module.exports = {
         {
           text: '客户端SDK',
           items: [
-            { text: '小程序', link: '/2019-09-28-MINIPROGRAM-SDK-introduction/' },
-            { text: 'JavaScript', link: '/2019-09-28-WEB-SDK-overview/' },
+            { text: '小程序', link: '/docs/MINIPROGRAM-SDK-introduction/' },
+            { text: 'JavaScript', link: '/docs/WEB-SDK-overview/' },
           ]
         },
         {
           text: '服务端SDK',
           items: [
-            { text: 'PHP', link: '/2019-09-03-PHP-SDK-introduction/' },
-            { text: 'Node.js', link: '/2019-09-28-NODEJS-SDK-overview/' }
+            { text: 'PHP', link: '/docs/PHP-SDK-introduction/' },
+            { text: 'Node.js', link: '/docs/NODEJS-SDK-overview/' }
           ]
         }
       ]
@@ -58,15 +58,15 @@ module.exports = {
     {
       text: '开发者工具',
       items: [
-        { text: 'CLI工具', link: '/2019-09-03-cli/' }
+        { text: 'CLI工具', link: '/tools/cloudbase-cli/' }
       ]
     },
     {
       text: '案例教学',
       items: [
-        { text: '视频教程', link: '/2019-09-03-share-miniprogram-cloud-basic-concept/' },
-        { text: '官方案例', link: '/2019-09-03-share-tree-hole/' },
-        { text: '项目实战', link: '/2019-09-03-share-maoyan/' }
+        { text: '视频教程', link: '/tutorials/videos-courses/' },
+        { text: '官方案例', link: '/tutorials/official-examples/' },
+        { text: '项目实战', link: '/tutorials/real-projects/' }
       ]
     },
     {
@@ -74,7 +74,7 @@ module.exports = {
       items: [
         { text: '训练营', link: 'https://mp.weixin.qq.com/s/nFCtlERfhv2FMrNgHei7cQ' },
         { text: '校园技术工坊', link: 'https://mp.weixin.qq.com/s/0gjrK-HbWHQHC5MuCvayqQ' },
-        { text: '云开发技术圈', link: '/docs/开发者活动/小程序云开发城市技术圈.html' },
+        { text: '云开发技术圈', link: '/开发者活动/小程序云开发城市技术圈.html' },
       ]
     },
     {
