@@ -7,7 +7,7 @@
           快速构建小程序、Web和移动应用
         </h1>
         <p class="home-page-hero-btn">
-          <a href="/start/">
+          <a href="/docs/">
             快速上手
           </a>
         </p>
