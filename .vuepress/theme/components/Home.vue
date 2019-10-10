@@ -8,7 +8,7 @@
         </h1>
         <p class="home-page-hero-btn">
           <a href="/start/">
-            立即使用
+            快速上手
           </a>
         </p>
       </div>

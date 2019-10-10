@@ -16,66 +16,99 @@ module.exports = {
       ]
     },
     {
-      text: '云开发能力',
+      text: '文档', 
       items: [
         {
           text: '基础能力',
-          items: [
-            {text: '云数据库',link: '/docs/clouddatabase-summary/'},
-            {text: '云函数',link: '/docs/cloudfunction-summary/'},
-            {text: '云存储',link: '/docs/cloudstorage-summary/'},
-            {text: '云调用',link: '/docs/cloudinvoke-summary/'}
-          ]
+          link: '/docs/base-feature/'
         },
         {
           text: '增值能力',
-          items: [
-            { text: '实时音视频', link: 'https://cloud.tencent.com/document/product/876/32344'},
-            { text: 'AI智能图像', link: '/docs/value-added-AI-face-detection-intro/'}
-          ]
-        }
-      ]
-    },
-    {
-      text: 'SDK文档',
-      items: [
-        {
-          text: '客户端SDK',
-          items: [
-            { text: '小程序', link: '/docs/MINIPROGRAM-SDK-introduction/' },
-            { text: 'JavaScript', link: '/docs/WEB-SDK-overview/' },
-          ]
+          link: '/docs/value-added-cloud-introduction/'
         },
         {
-          text: '服务端SDK',
-          items: [
-            { text: 'PHP', link: '/docs/PHP-SDK-introduction/' },
-            { text: 'Node.js', link: '/docs/NODEJS-SDK-overview/' }
-          ]
+          text: 'SDK文档',
+          link: '/docs/sdk-summary/'
         }
       ]
     },
     {
-      text: '开发者工具',
-      items: [
-        { text: 'CLI工具', link: '/tools/cloudbase-cli/' }
-      ]
+      text: '生态',
+      items: [{
+        text: '开发者工具',
+        items: [
+          { text: 'CLI工具', link: '/tools/cloudbase-cli/' }
+        ]
+      },{
+        text: '技术沙龙',
+        items: [
+          { text: '训练营', link: 'https://mp.weixin.qq.com/s/nFCtlERfhv2FMrNgHei7cQ' },
+          { text: '校园技术工坊', link: 'https://mp.weixin.qq.com/s/0gjrK-HbWHQHC5MuCvayqQ' },
+          { text: '云开发技术圈', link: '/activities/wcc/' },
+        ]
+      },{
+        text: '资源列表',
+        items: [{
+          text: '云开发资源',
+          link: 'https://github.com/TencentCloudBase/awesome-tcb'
+        },{
+          text: '团队主页',
+          link: 'https://github.com/TencentCloudBase'
+        }]
+      }]
     },
+    // {
+    //   text: '云开发能力',
+    //   items: [
+    //     {
+    //       text: '基础能力',
+    //       items: [
+    //         {text: '云数据库',link: '/docs/clouddatabase-summary/'},
+    //         {text: '云函数',link: '/docs/cloudfunction-summary/'},
+    //         {text: '云存储',link: '/docs/cloudstorage-summary/'},
+    //         {text: '云调用',link: '/docs/cloudinvoke-summary/'}
+    //       ]
+    //     },
+    //     {
+    //       text: '增值能力',
+    //       items: [
+    //         { text: '实时音视频', link: 'https://cloud.tencent.com/document/product/876/32344'},
+    //         { text: 'AI智能图像', link: '/docs/value-added-AI-face-detection-intro/'}
+    //       ]
+    //     }
+    //   ]
+    // },
+    // {
+    //   text: 'SDK文档',
+    //   items: [
+    //     {
+    //       text: '客户端SDK',
+    //       items: [
+    //         { text: '小程序', link: '/docs/MINIPROGRAM-SDK-introduction/' },
+    //         { text: 'JavaScript', link: '/docs/WEB-SDK-overview/' },
+    //       ]
+    //     },
+    //     {
+    //       text: '服务端SDK',
+    //       items: [
+    //         { text: 'PHP', link: '/docs/PHP-SDK-introduction/' },
+    //         { text: 'Node.js', link: '/docs/NODEJS-SDK-overview/' }
+    //       ]
+    //     }
+    //   ]
+    // },
     {
-      text: '案例教学',
+      text: '学习',
       items: [
         { text: '视频教程', link: '/tutorials/video-courses/share-miniprogram-cloud-basic-concept/' },
         { text: '官方案例', link: '/tutorials/official-examples/share-tree-hole/' },
-        { text: '项目实战', link: '/tutorials/real-projects/share-maoyan/' }
+        { text: '项目实战', link: '/tutorials/real-projects/share-maoyan/' },
+        { text: '案例提交', link: 'https://github.com/TencentCloudBase/blog/issues' },
       ]
     },
     {
-      text: '技术沙龙',
-      items: [
-        { text: '训练营', link: 'https://mp.weixin.qq.com/s/nFCtlERfhv2FMrNgHei7cQ' },
-        { text: '校园技术工坊', link: 'https://mp.weixin.qq.com/s/0gjrK-HbWHQHC5MuCvayqQ' },
-        { text: '云开发技术圈', link: '/activities/wcc' },
-      ]
+      text: '问题反馈',
+      link: '/feedback/'
     },
     {
       text: '更多',
