@@ -1,3 +1,9 @@
+---
+title: "HttpApi调用"
+date: "2019-08-01"
+permalink: "2019-08-01-share-Http API Transfer"
+---
+
 # 小程序云开发之httpApi调用。
 
 小程序云开发之httpApi调用（返回“47001处理”）

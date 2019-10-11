@@ -1,9 +1,10 @@
 const sidebar = require('./sidebar')
 
 module.exports = {
-  // repo: 'TencentCloudBase/blog',
+  repo: 'TencentCloudBase/blog',
   navbar: true, 
-  editLinks: false,
+  editLinks: true,
+  editLinkText: '在 GitHub 上编辑此页',
   lastUpdated: '更新于',
   sidebar,
   logo: '/favicon.png',
