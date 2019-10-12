@@ -1,7 +1,7 @@
 ---
 title: "随手记Lite小程序"
 date: "2019-08-24"
-permalink: "2019-08-24-share-Keep in mind Lite"
+permalink: "2019-08-24-share-keep-in-mind-lite"
 ---
 
 **一、做一款轻便的备忘录小工具**

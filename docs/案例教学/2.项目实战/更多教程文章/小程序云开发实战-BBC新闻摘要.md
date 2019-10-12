@@ -1,7 +1,7 @@
 ---
 title: "BBC新闻摘要"
 date: "2019-08-03"
-permalink: "2019-08-03-share-BBC News Summary"
+permalink: "2019-08-03-share-bbc-news-summary"
 ---
 
 “众所周知，云开发目前只支持Node js,如何突破这个限制？且看高手们如何用Python打通云开发七经六脉，让云开发的使用更加行云流水。”

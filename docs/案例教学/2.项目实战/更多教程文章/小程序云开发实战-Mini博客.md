@@ -1,7 +1,7 @@
 ---
 title: "Mini博客"
 date: "2019-08-04"
-permalink: "2019-08-04-share-Mini Blog"
+permalink: "2019-08-04-share-mini-blog"
 ---
 
 用小程序·云开发将博客小程序常用功能“一网打尽”

@@ -1,7 +1,7 @@
 ---
 title: "HttpApi调用"
 date: "2019-08-01"
-permalink: "2019-08-01-share-Http API Transfer"
+permalink: "2019-08-01-share-http-api-transfer"
 ---
 
 # 小程序云开发之httpApi调用。

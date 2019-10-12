@@ -1,7 +1,7 @@
 ---
 title: "Excel数据保存"
 date: "2019-08-02"
-permalink: "2019-08-02-share-Excel data"
+permalink: "2019-08-02-share-excel-data"
 ---
 
 # 小程序导出数据到excel表，借助云开发后台实现excel数据的保存

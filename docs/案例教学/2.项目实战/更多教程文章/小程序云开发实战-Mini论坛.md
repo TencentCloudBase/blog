@@ -1,7 +1,7 @@
 ---
 title: "Mini论坛"
 date: "2019-08-06"
-permalink: "2019-08-06-share-Mini forum"
+permalink: "2019-08-06-share-mini-forum"
 ---
 
 ---

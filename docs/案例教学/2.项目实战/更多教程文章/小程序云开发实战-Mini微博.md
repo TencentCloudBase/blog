@@ -1,7 +1,7 @@
 ---
 title: "Mini微博"
 date: "2019-08-05"
-permalink: "2019-08-05-share-Mini microblog"
+permalink: "2019-08-05-share-mini-microblog"
 ---
 
 ### 0. 前言
