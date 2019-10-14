@@ -11,7 +11,7 @@ sidebar: "auto"
 
 云函数中初始化云开发实例时（`wx-server-sdk` 以及 `tcb-admih-node`）, 缺省 `env` 参数时，将默认访问**第一个创建**的环境。在云函数中一般建议使用当前的环境来初始化云开发实例。
 
-在 `wx-server-sdk` 中，可以是使用 `.getWXContext` 和 `.updateConfig` 方法来做到动态失败当前环境变量：
+在 `wx-server-sdk` 中，可以使用 `cloud.DYNAMIC_CURRENT_ENV` 方法来获取当前环境信息：
 
 ```js
 const cloud = require('wx-server-sdk')
@@ -48,6 +48,3 @@ exports.main = async (event) => {
 }
 ```
 
-## 示例问题 2
-
-回答1
