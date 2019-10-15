@@ -12,8 +12,8 @@ module.exports = {
     { 
       text: '快速入门', 
       items: [
-        { text: '小程序', link: '/docs/wx-dev-guide-summary/' },
-        { text: 'Web', link: '/docs/web-dev-guide-summary/' },
+        { text: '小程序', link: '/2019-09-03-wx-dev-guide-summary/' },
+        { text: 'Web', link: '/2019-09-03-web-dev-guide-summary/' },
       ]
     },
     {
@@ -38,7 +38,7 @@ module.exports = {
       items: [{
         text: '开发者工具',
         items: [
-          { text: 'CLI工具', link: '/tools/cloudbase-cli/' }
+          { text: 'CLI工具', link: '/2019-09-03-cli/' }
         ]
       },{
         text: '技术沙龙',
@@ -101,9 +101,9 @@ module.exports = {
     {
       text: '学习',
       items: [
-        { text: '视频教程', link: '/tutorials/video-courses/share-miniprogram-cloud-basic-concept/' },
-        { text: '官方案例', link: '/tutorials/official-examples/share-tree-hole/' },
-        { text: '项目实战', link: '/tutorials/real-projects/share-maoyan/' },
+        { text: '视频教程', link: '/2019-09-03-share-miniprogram-cloud-basic-concept/' },
+        { text: '官方案例', link: '/2019-09-03-share-tree-hole/' },
+        { text: '项目实战', link: '/2019-09-03-share-maoyan/' },
         { text: '案例提交', link: 'https://github.com/TencentCloudBase/blog/issues' },
       ]
     },
