@@ -21,15 +21,15 @@ module.exports = {
       items: [
         {
           text: '基础能力',
-          link: '/docs/base-feature/'
+          link: '/2019-10-16-base-feature/'
         },
         {
           text: '增值能力',
-          link: '/docs/value-added-cloud-introduction/'
+          link: '/2019-09-03-value-added-cloud-introduction/'
         },
         {
           text: 'SDK文档',
-          link: '/docs/sdk-summary/'
+          link: '/2019-10-10-sdk-summary/'
         }
       ]
     },
