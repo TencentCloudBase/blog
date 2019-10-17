@@ -3,6 +3,7 @@ yarn.lock
 package-lock.json
 node_modules
 
-# vuepress 
+# vuepress
 dist
 .vuepress/config/sidebar.js
+.DS_Store
