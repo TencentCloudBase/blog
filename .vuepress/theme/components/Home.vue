@@ -74,11 +74,11 @@ export default {
           rows: [
             {
               name: '小程序',
-              href: '/docs/wx-dev-guide-summary/'
+              href: '/2019-09-03-wx-dev-guide-summary/'
             },
             {
               name: 'Web&H5',
-              href: '/docs/web-dev-guide-summary/'
+              href: '/2019-09-03-web-dev-guide-summary/'
             },
             {
               name: '移动应用(即将推出)',
@@ -91,15 +91,15 @@ export default {
           rows: [
             {
               name: '云函数',
-              href: '/docs/cloudfunction-summary/'
+              href: '/2019-09-03-cloudfunction-summary/'
             },
             {
               name: '云数据库',
-              href: '/docs/clouddatabase-summary/'
+              href: '/2019-09-03-clouddatabase-summary/'
             },
             {
               name: '云存储',
-              href: '/docs/cloudstorage-summary/'
+              href: '/2019-09-03-cloudstorage-summary/'
             },
           ]
         },
@@ -108,7 +108,7 @@ export default {
           rows: [
             {
               name: 'AI智能图像',
-              href: '/docs/value-added-AI-face-detection-intro/'
+              href: '/2019-09-03-value-added-AI-face-detection-intro/'
             },
             {
               name: '实时音视频',
