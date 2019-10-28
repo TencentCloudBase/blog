@@ -44,7 +44,7 @@ module.exports = {
         text: '技术沙龙',
         items: [
           { text: '训练营', link: 'https://mp.weixin.qq.com/s/nFCtlERfhv2FMrNgHei7cQ' },
-          { text: '校园技术工坊', link: 'https://mp.weixin.qq.com/s/0gjrK-HbWHQHC5MuCvayqQ' },
+          { text: '校园技术工坊', link: 'https://mp.weixin.qq.com/s/ENA2TAJ2fHtyMgFQ5kbBAA' },
           { text: '云开发技术圈', link: '/activities/wcc/' },
         ]
       }, {
