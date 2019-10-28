@@ -2,22 +2,22 @@ const sidebar = require('./sidebar')
 
 module.exports = {
   repo: 'TencentCloudBase/blog',
-  navbar: true, 
+  navbar: true,
   editLinks: true,
   editLinkText: '在 GitHub 上编辑此页',
   lastUpdated: '更新于',
   sidebar,
   logo: '/favicon.png',
   nav: [
-    { 
-      text: '快速入门', 
+    {
+      text: '快速入门',
       items: [
         { text: '小程序', link: '/2019-09-03-wx-dev-guide-summary/' },
         { text: 'Web', link: '/2019-09-03-web-dev-guide-summary/' },
       ]
     },
     {
-      text: '文档', 
+      text: '文档',
       items: [
         {
           text: '基础能力',
@@ -40,23 +40,28 @@ module.exports = {
         items: [
           { text: 'CLI工具', link: '/2019-09-03-cli/' }
         ]
-      },{
+      }, {
         text: '技术沙龙',
         items: [
           { text: '训练营', link: 'https://mp.weixin.qq.com/s/nFCtlERfhv2FMrNgHei7cQ' },
           { text: '校园技术工坊', link: 'https://mp.weixin.qq.com/s/0gjrK-HbWHQHC5MuCvayqQ' },
           { text: '云开发技术圈', link: '/activities/wcc/' },
         ]
-      },{
+      }, {
         text: '资源列表',
         items: [{
           text: '云开发资源',
           link: 'https://github.com/TencentCloudBase/awesome-tcb'
-        },{
+        }, {
           text: '团队主页',
           link: 'https://github.com/TencentCloudBase'
         }]
-      }]
+      },{
+        text: '开源生态',
+        items: [
+          { text: '开源生态协同', link: '/2019-10-28-opensource-guidelines/' }
+        ]
+      },]
     },
     // {
     //   text: '云开发能力',
@@ -115,7 +120,7 @@ module.exports = {
       text: '更多',
       items: [
         { text: '官方主页', link: 'https://cloud.tencent.com/product/tcb' },
-        { text: '云+社区', link: 'https://cloud.tencent.com/developer/team/tcb'}
+        { text: '云+社区', link: 'https://cloud.tencent.com/developer/team/tcb' }
       ]
     }
   ]
