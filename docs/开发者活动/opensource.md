@@ -45,7 +45,9 @@ Task Coding任务列表，暂未发出，请耐心等待
 ## 赞助申请与咨询
 
 申请链接：https://wj.qq.com/s2/4851677/41b6/
+
 邮箱咨询：cloudbase@tencent.com
+
 微信咨询：加微信号Tcloudedu1，回复【开源】
 
 
