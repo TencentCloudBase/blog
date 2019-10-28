@@ -125,15 +125,15 @@ export default {
             },
             {
               name: 'JavaScript SDK',
-              href: '/docs/WEB-SDK-overview/'
+              href: '/2019-09-28-WEB-SDK-overview'
             },
             {
               name: 'NodeJS SDK',
-              href: '/docs/NODEJS-SDK-overview/'
+              href: '/2019-09-28-NODEJS-SDK-overview/'
             },
             {
               name: 'PHP SDK',
-              href: '/docs/PHP-SDK-introduction/'
+              href: '/2019-09-03-PHP-SDK-introduction/'
             }
           ]
         }
