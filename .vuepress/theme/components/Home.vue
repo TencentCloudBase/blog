@@ -3,9 +3,11 @@
     <div class="home-page-hero">
       <div class="home-page-hero-inner">
         <h1 class="home-page-hero-title">
-          云+端一体化<br/>
-          快速构建小程序、Web和移动应用
+          云开发
         </h1>
+        <h2  class="home-page-hero-subtitle">
+        云端一体化领先实践，基于Serverless模式快速构建小程序、H5和移动应用
+        </h2>
         <p class="home-page-hero-btn">
           <a href="/2019-10-10-what-is-tcb/">
             快速上手
@@ -185,11 +187,18 @@ $mobile-width: 1023px;
     }
 
     &-title {
+      font-size: 1.9rem;
       text-align: center;
       line-height: 2.3;
       letter-spacing: 1px;
     }
-
+    &-subtitle{
+      font-size: 1.11rem;
+      text-align: center;
+      line-height: 2.3;
+      letter-spacing: 1px;
+      border-bottom:none;
+    }
     &-btn {
       text-align: center;
       padding-top: 15px;
