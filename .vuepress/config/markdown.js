@@ -8,5 +8,5 @@ module.exports = {
   toc: { 
     includeLevel: [1, 2, 3]
   },
-  lineNumbers: true
+  lineNumbers: false
 }
