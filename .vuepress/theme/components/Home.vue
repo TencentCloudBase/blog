@@ -103,6 +103,10 @@ export default {
               name: '云存储',
               href: '/2019-09-03-cloudstorage-summary/'
             },
+            {
+              name: '云调用',
+              href: '/2019-09-03-cloudinvoke-summary/'
+            },
           ]
         },
         {
