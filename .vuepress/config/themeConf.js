@@ -21,7 +21,19 @@ module.exports = {
       items: [
         {
           text: '基础能力',
-          link: '/2019-10-16-base-feature/'
+          items: [{
+            text: '云函数',
+            link: '/2019-09-03-cloudfunction-summary/'
+          },{
+            text: '云存储',
+            link: '/2019-09-03-cloudstorage-summary/'
+          },{
+            text: '云数据库',
+            link: '/2019-09-03-clouddatabase-summary/'
+          },{
+            text: '云调用',
+            link: '/2019-09-03-cloudinvoke-summary/'
+          }]
         },
         {
           text: '增值能力',
@@ -33,7 +45,7 @@ module.exports = {
       text: 'API文档',
       items: [
         {
-          text: '客户端SDK',
+          text: '客户端',
           items: [{
             text: '小程序SDK',
             link: '/2019-09-28-MINIPROGRAM-SDK-introduction/'
@@ -43,7 +55,7 @@ module.exports = {
           }]
         },
         {
-          text: '服务端SDK',
+          text: '服务端',
           items: [{
             text: 'Node.js SDK',
             link: '/2019-09-28-NODEJS-SDK-overview/'
