@@ -17,7 +17,7 @@ module.exports = {
       ]
     },
     {
-      text: '文档',
+      text: '云开发能力',
       items: [
         {
           text: '基础能力',
@@ -26,10 +26,31 @@ module.exports = {
         {
           text: '增值能力',
           link: '/2019-09-03-value-added-cloud-introduction/'
+        }
+      ]
+    },
+    {
+      text: 'API文档',
+      items: [
+        {
+          text: '客户端SDK',
+          items: [{
+            text: '小程序SDK',
+            link: '/2019-09-28-MINIPROGRAM-SDK-introduction/'
+          },{
+            text: 'JavaScript SDK',
+            link: '/2019-09-28-WEB-SDK-overview/'
+          }]
         },
         {
-          text: 'SDK文档',
-          link: '/2019-10-10-sdk-summary/'
+          text: '服务端SDK',
+          items: [{
+            text: 'Node.js SDK',
+            link: '/2019-09-28-NODEJS-SDK-overview/'
+          },{
+            text: 'PHP SDK',
+            link: '/2019-09-03-PHP-SDK-introduction/'
+          }]
         }
       ]
     },
@@ -38,7 +59,7 @@ module.exports = {
       items: [{
         text: '开发者工具',
         items: [
-          { text: 'CLI工具', link: '/2019-09-03-cli/' }
+          { text: 'Cloudbase CLI', link: '/2019-09-03-cli/' }
         ]
       }, {
         text: '技术沙龙',
@@ -64,46 +85,6 @@ module.exports = {
         ]
       },]
     },
-    // {
-    //   text: '云开发能力',
-    //   items: [
-    //     {
-    //       text: '基础能力',
-    //       items: [
-    //         {text: '云数据库',link: '/docs/clouddatabase-summary/'},
-    //         {text: '云函数',link: '/docs/cloudfunction-summary/'},
-    //         {text: '云存储',link: '/docs/cloudstorage-summary/'},
-    //         {text: '云调用',link: '/docs/cloudinvoke-summary/'}
-    //       ]
-    //     },
-    //     {
-    //       text: '增值能力',
-    //       items: [
-    //         { text: '实时音视频', link: 'https://cloud.tencent.com/document/product/876/32344'},
-    //         { text: 'AI智能图像', link: '/docs/value-added-AI-face-detection-intro/'}
-    //       ]
-    //     }
-    //   ]
-    // },
-    // {
-    //   text: 'SDK文档',
-    //   items: [
-    //     {
-    //       text: '客户端SDK',
-    //       items: [
-    //         { text: '小程序', link: '/docs/MINIPROGRAM-SDK-introduction/' },
-    //         { text: 'JavaScript', link: '/docs/WEB-SDK-overview/' },
-    //       ]
-    //     },
-    //     {
-    //       text: '服务端SDK',
-    //       items: [
-    //         { text: 'PHP', link: '/docs/PHP-SDK-introduction/' },
-    //         { text: 'Node.js', link: '/docs/NODEJS-SDK-overview/' }
-    //       ]
-    //     }
-    //   ]
-    // },
     {
       text: '学习',
       items: [
@@ -114,12 +95,9 @@ module.exports = {
       ]
     },
     {
-      text: '问题反馈',
-      link: '/feedback/'
-    },
-    {
       text: '更多',
       items: [
+        { text: '问题反馈', link: '/feedback/' },
         { text: '官方主页', link: 'https://cloud.tencent.com/product/tcb' },
         { text: '云+社区', link: 'https://cloud.tencent.com/developer/team/tcb' }
       ]
