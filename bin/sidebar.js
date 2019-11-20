@@ -66,18 +66,23 @@ function readTocs(root) {
 function mapTocToSidebar(root, prefix) {
   prefix = prefix || ''
   let sidebar = []
-
+  
   const files = fs.readdirSync(root)
   files.forEach(filename => {
     const file = path.resolve(root, filename)
     const stat = fs.statSync(file)
-    let [order, title, type] = filename.split('.')
+    const match = /^(\d+)\.(.+)/.exec(filename);
+    if(!match){
+      console.log(filename)
+      return;
+    }
 
-    order = parseInt(order, 10)
+    const order = parseInt(match[1], 10)
     if (isNaN(order) || order < 0) {
       return
     }
-
+    const type = path.extname(match[2]);
+    const title = type==='.md'?match[2].split(type)[0]:match[2];
     if (sidebar[order]) {
       logger.warn(`For ${file}, its order has appeared in the same level directory. And it will be rewritten.`)
     }
@@ -89,7 +94,7 @@ function mapTocToSidebar(root, prefix) {
         children: mapTocToSidebar(file, prefix + filename + '/')
       }
     } else {
-      if (type !== 'md') {
+      if (type !== '.md') {
         logger.error(`For ${file}, its type is not supported.`)
         return
       }
