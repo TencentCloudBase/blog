@@ -73,7 +73,6 @@ function mapTocToSidebar(root, prefix) {
     const stat = fs.statSync(file)
     const match = /^(\d+)\.(.+)/.exec(filename);
     if(!match){
-      console.log(filename)
       return;
     }
 
