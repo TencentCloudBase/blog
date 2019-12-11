@@ -1,5 +1,3 @@
-# 云函数
-
 ## 执行函数
 
 `callFunction(object)`
