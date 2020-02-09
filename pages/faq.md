@@ -34,7 +34,7 @@ exports.main = async (event) => {
 }
 ```
 
-在 `tcb-admin-node` 中, 可以使用 `.getCurrentEnv` 方法获取当前环境：
+在 `tcb-admin-node` 中, 可以在云函数的 main 方法中使用 `.getCurrentEnv` 方法获取当前环境：
 
 ```js
 const tcb = require('tcb-admin-node')
@@ -48,3 +48,8 @@ exports.main = async (event) => {
 }
 ```
 
+## 怎样在腾讯云控制台中管理/查看小程序云开发的环境？
+
+使用对应的小程序登陆腾讯云访问云开发控制台即可。登陆地址：https://cloud.tencent.com/login/mp?s_url=https%3A%2F%2Fconsole.cloud.tencent.com%2Ftcb
+
+注意扫码后要使用对应的小程序登陆。
