@@ -1,7 +1,7 @@
 ---
 title: "腾讯犀牛鸟云开发教学支持计划"
 date: "2020-03-19"
-permalink: "2020-03-19-university-support-during-the-epidemic"
+permalink: "2020-03-19-edu-support"
 ---
 
 
