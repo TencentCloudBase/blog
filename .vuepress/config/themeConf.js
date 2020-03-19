@@ -61,8 +61,16 @@ module.exports = {
         items: [
           { text: '开源生态协同', link: '/2019-10-28-opensource-guidelines/' },
           { text: 'Task Coding', link: '/2019-11-12-taskcoding-guidelines/' },
-        ]
-      },]
+          ]
+        },
+        {
+        text: '高校生态',
+        items: [
+          { text: '教师教学支持计划', link: '/2020-03-19-edu-support/' },
+
+          ]
+        }
+      ]
     },
     // {
     //   text: '云开发能力',
