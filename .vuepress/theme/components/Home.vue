@@ -9,7 +9,7 @@
         云端一体化领先实践，基于Serverless模式快速构建小程序、H5和移动应用
         </h2>
         <p class="home-page-hero-btn">
-          <a href="/2019-10-10-what-is-tcb/">
+          <a target="_blank" href="http://docs.cloudbase.net/quick-start/create-env.html">
             快速上手
           </a>
         </p>
@@ -51,7 +51,7 @@
             v-for="(item, index) in others" 
             :key="index"
           >
-            <a :href="item.href">{{item.name}}</a>
+            <a :href="item.href" target="_blank">{{item.name}}</a>
           </p>
         </div>
       </div>
@@ -76,15 +76,15 @@ export default {
           rows: [
             {
               name: '小程序',
-              href: '/2019-09-03-wx-dev-guide-summary/'
+              href: 'http://docs.cloudbase.net/quick-start/mini-program.html'
             },
             {
               name: 'Web&H5',
-              href: '/2019-09-03-web-dev-guide-summary/'
+              href: 'http://docs.cloudbase.net/quick-start/web.html'
             },
             {
-              name: '移动应用(即将推出)',
-              href: ''
+              name: 'Flutter',
+              href: 'http://docs.cloudbase.net/quick-start/flutter.html'
             },
           ]
         },
@@ -93,15 +93,15 @@ export default {
           rows: [
             {
               name: '云函数',
-              href: '/2019-09-03-cloudfunction-summary/'
+              href: 'http://docs.cloudbase.net/cloud-function/first_func.html'
             },
             {
               name: '云数据库',
-              href: '/2019-09-03-clouddatabase-summary/'
+              href: 'http://docs.cloudbase.net/database/introduce.html'
             },
             {
               name: '云存储',
-              href: '/2019-09-03-cloudstorage-summary/'
+              href: 'http://docs.cloudbase.net/storage/introduce.html'
             },
             {
               name: '云调用',
@@ -114,11 +114,11 @@ export default {
           rows: [
             {
               name: 'AI智能图像',
-              href: '/2019-09-03-value-added-AI-face-detection-intro/'
+              href: 'http://docs.cloudbase.net/extension/other/ai-image.html'
             },
             {
               name: '实时音视频',
-              href: 'https://cloud.tencent.com/document/product/876/32344'
+              href: 'http://docs.cloudbase.net/extension/other/audio-video.html'
             }
           ]
         },
@@ -131,11 +131,11 @@ export default {
             },
             {
               name: 'JavaScript SDK',
-              href: '/2019-09-28-WEB-SDK-overview'
+              href: 'http://docs.cloudbase.net/api-reference/web/initialization.html'
             },
             {
-              name: 'NodeJS SDK',
-              href: '/2019-09-28-NODEJS-SDK-overview/'
+              name: 'Node.js SDK',
+              href: 'http://docs.cloudbase.net/api-reference/server/node/introduction.html'
             },
             {
               name: 'PHP SDK',
