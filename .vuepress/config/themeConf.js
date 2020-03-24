@@ -63,7 +63,7 @@ module.exports = {
             },
             {
               text: "校园布道师",
-              link: "#"
+              link: "https://mp.weixin.qq.com/s/HIwsvl4lplns8m4KQJ9Ayg"
             }
           ]
         },
