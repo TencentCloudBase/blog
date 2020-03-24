@@ -69,7 +69,7 @@ module.exports = {
         },
         {
           text: "第三方服务",
-          items: [{ text: "第三方服务文档规范", link: "#" }]
+          items: [{ text: "第三方服务文档规范", link: "/2020-03-24-third-docs/" }]
         },
         {
           text: "云开发布道师",
@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       text: "Q & A",
-      link: "#"
+      link: "/2020-03-24-q-and-a/"
     }
   ]
 };
