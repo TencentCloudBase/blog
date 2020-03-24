@@ -11,6 +11,14 @@ module.exports = {
       }
     ],
     [
+      'script',
+      {
+        type: 'text/javascript',
+        src: 'https://v1.cnzz.com/z_stat.php?id=1278686416&web_id=1278686416',
+        async: ''
+      }
+    ],
+    [
       'link', { rel: 'icon', href: '/favicon.png' }
     ]
   ]
