@@ -59,7 +59,7 @@ module.exports = {
           items: [
             {
               text: "教学支持",
-              link: "https://tencentcloudbase.github.io/2020-03-19-edu-support/"
+              link: "/2020-03-19-edu-support/"
             },
             {
               text: "校园布道师",
