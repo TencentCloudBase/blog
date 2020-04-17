@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "nodemon --watch docs bin/sidebar.js & ./node_modules/.bin/vuepress dev .",
-    "build": "node bin/sidebar.js && ./node_modules/.bin/vuepress build .",
+    "dev": "nodemon --watch docs bin/sidebar.js & ./node_modules/.bin/vuepress dev . --no-cache",
+    "build": "node bin/sidebar.js && ./node_modules/.bin/vuepress build . --no-cache",
     "test": "echo 'empty test'"
   },
   "repository": {
