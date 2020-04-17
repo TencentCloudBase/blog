@@ -10,10 +10,6 @@ module.exports = {
   logo: "/favicon.png",
   nav: [
     {
-      text: "官网",
-      link: "http://www.cloudbase.net/"
-    },
-    {
       text: "活动",
       items: [
         {
