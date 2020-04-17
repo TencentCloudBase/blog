@@ -6,6 +6,7 @@ set -e
 # build static
 npm run build
 cd .vuepress/dist
+echo 'club.cloudbase.net' > CNAME
 
 git init
 git add -A
