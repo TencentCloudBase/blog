@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "nodemon --watch docs bin/sidebar.js & ./node_modules/.bin/vuepress dev . --no-cache",
-    "build": "node bin/sidebar.js && ./node_modules/.bin/vuepress build . --no-cache",
+    "build": "node bin/provider.js && node bin/sidebar.js && ./node_modules/.bin/vuepress build . --no-cache",
     "test": "echo 'empty test'"
   },
   "repository": {
@@ -23,6 +23,7 @@
     "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "@vuepress/plugin-pwa": "^1.0.0-rc.1",
+    "axios": "^0.19.2",
     "blueimp-md5": "^2.10.0",
     "dayjs": "^1.8.15",
     "ejs": "^2.7.1",

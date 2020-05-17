@@ -77,6 +77,10 @@ module.exports = {
       ]
     },
     {
+      text: "产品公告",
+      link: "/product/"
+    },
+    {
       text: "Q & A",
       link: "/2020-03-24-q-and-a/"
     }

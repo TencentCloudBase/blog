@@ -7,3 +7,6 @@ node_modules
 dist
 .vuepress/config/sidebar.js
 .DS_Store
+
+# 产品公告数据，存在cms中
+pages/product.md
