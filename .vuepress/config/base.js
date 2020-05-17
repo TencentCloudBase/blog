@@ -19,6 +19,14 @@ module.exports = {
       }
     ],
     [
+      'script',
+      {
+        type: 'text/javascript',
+        src: '/scripts/mta-analytics.js',
+        async: ''
+      }
+    ],
+    [
       'link', { rel: 'icon', href: '/favicon.png' }
     ]
   ]
