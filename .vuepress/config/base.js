@@ -6,6 +6,14 @@ module.exports = {
       'script',
       {
         type: 'text/javascript',
+        src: '/scripts/redirect.js',
+        async: ''
+      }
+    ],
+    [
+      'script',
+      {
+        type: 'text/javascript',
         src: '/scripts/baidu-analytics.js',
         async: ''
       }
