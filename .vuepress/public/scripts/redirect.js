@@ -14,5 +14,7 @@
   const { pathname } = window.location
   if (REDIRECT_MAP[pathname]) {
     window.location.href = REDIRECT_MAP[pathname]
+  } else {
+    window.location.href = 'https://cloudbase.net/'
   }
 })()
